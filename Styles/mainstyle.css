@@ -1,42 +1,9 @@
 * {
-    --mainpurple: hsla(280, 30%, 25%);
-}
+    --headerfont:'Cutive Mono', monospace;
+    --prgfont: 'Roboto', sans-serif;
+    --clrgrey:#a2a2a2;
+    --clrpurple: #7e007e;
+    box-sizing: border-box;
+    font-family: var(--prgfont);
 
-
-body {
-    background-color: var(--mainpurple);
-    font-family: 'Oswald', sans-serif ;
-}
-
-.welcome {
-    background-color: darkgrey;
-    height: 90vh;
-}
-main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-    height: 90%;
-}
-
-.grid section {
-    background-color: darkgrey;
-    border-radius: 10%;
-    justify-content: center;
-    align-content: center;
-}
-.projects {
-
-    height: 90vh;
-}
-.contact {
-    
-    height: 90vh;
 }
