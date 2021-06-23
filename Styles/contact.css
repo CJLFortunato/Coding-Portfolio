@@ -82,3 +82,73 @@ input[type="submit"] {
     align-self: center;
     margin-bottom: 5%;
 }
+
+/* ==================================================================================================================================== */
+/* Desktop version */
+
+@media screen and (min-width: 768px) {
+
+    h1 {
+        font-size: 84px;
+        font-weight: lighter;
+    }
+
+    p {
+        line-height: 1.5rem;
+        font-size: 1.5rem;
+        margin: 1%;
+        align-self: flex-start;
+    }
+    p:nth-child(5) {
+        align-self: center;
+    }
+    
+    main ul {
+        width: 95%;
+        padding-left: 0;
+        margin-top: 0;
+    }
+    
+    main li {
+        padding: 1%;
+        list-style-type: none;
+        border-left: 3px solid var(--clrpurple);
+        margin: 2% 0;
+    }
+
+    form {
+        display: flex;
+        flex-flow: column wrap;
+        align-content: center;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        background-color: black;
+        width: 40%;
+        padding: 1% 0;
+        
+    }
+    label {
+        padding: 1%;
+        margin: 2% 0;
+        color: white;
+        width: 90%;
+        
+    }
+    input {
+        height: 2.5rem;
+        
+        border-radius: 7px;
+        width: 90%;
+    }
+    textarea {
+        margin-bottom: 6%;
+        width: 90%;
+        border-radius: 7px;
+    }
+    input[type="submit"] {
+        width: 30%;
+        align-self: center;
+        margin-bottom: 5%;
+    }
+
+}

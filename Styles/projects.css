@@ -94,4 +94,7 @@ h1 {
 #github-link {
     top: -3rem;
 } 
+.cards p {
+    font-size: 1.3rem;
+}
 }
