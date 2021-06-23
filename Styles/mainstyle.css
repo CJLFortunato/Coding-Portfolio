@@ -138,7 +138,15 @@ main {
     .main-footer ul li {
         margin: 0.5rem;
     }
-
+    .social-media {
+        width: 70%;
+        margin: 10px auto;
+        
+    }
+    .social-media p {
+        font-size: 1.5rem;
+    }
+     
 
 
 
