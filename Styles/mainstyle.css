@@ -80,6 +80,8 @@ footer ul li {
 .main-footer p {
     color: var(--clrgrey);
     font-size: 0.9rem;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 /* ==== Main content ==== */
