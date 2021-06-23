@@ -36,35 +36,12 @@ h1 {
     height: 270px;
     border-radius: 10px;
     padding: 4%;
-    /* display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 4fr 1fr 1fr 1fr;
-    gap: 0;
-    grid-template-areas: "img img"
-                         "title ."
-                         "dsr dsr"
-                         "link gtb";*/
 } 
-/* .cards img{
-    grid-area: "img";
-}
-.cards h2 {
-    grid-area: "title";
-}
-.cards p {
-    grid-area: "dsr";
-}
-#project-link {
-    grid-area: "link";
-}
-#github-link {
-    grid-area: "gtb";
-} */
+
 .cards img {
     height: 160px;
     width: 100%;
     background-color: lightslategray;
-    /* border: 1px solid green; */
     margin: 0;
     object-fit: cover;
 }
@@ -86,3 +63,35 @@ h1 {
     top: -2.7rem;
     margin-left: 71%;
 } 
+
+/* =================================================================================================================================================== */
+/* Desktop version */
+
+@media screen and (min-width: 768px) {
+
+h1 {
+    font-size: 84px;
+    font-weight: lighter;
+}
+.grid {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 5%;
+    margin-bottom: 4%;
+}
+.cards {
+    height:300px; 
+    font-size: larger;
+}
+.cards h2 {
+    margin-top: 7%;
+}
+#project-link {
+    top: -3rem;
+}
+#github-link {
+    top: -3rem;
+} 
+}
