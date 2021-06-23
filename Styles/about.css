@@ -61,3 +61,68 @@ section {
 .skills {
     margin-top: 25%;
 }
+
+/* ==================================================================================================================================== */
+/* Desktop version */
+
+@media screen and (min-width: 768px) {
+
+    h1 {
+        font-size: 84px;
+        font-weight: lighter;
+    }
+    .download-btn {
+        justify-content: flex-start;
+        top: 0;
+        margin-bottom: 2rem;
+        margin-left: 2%;
+    }
+    button {
+        width: 20%;
+    }
+    .portrait {
+        margin: 0 auto;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 250px 1fr;
+        grid-template-rows: 1fr 250px 1fr;
+        margin-top: 1rem;
+        
+    }
+    .skills {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        margin: 0;
+    }
+    .xp {
+        grid-column: 3 / 4;
+        grid-row: 1 / 2;
+    }
+    .portrait {
+        grid-column: 2 / 3;
+        grid-row: 2/3;
+        margin: 0% auto;
+        border: 15px solid black;
+        align-self: center;
+        width: 250px;
+        height: 250px;
+    }
+    .formation {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+    .hobbies {
+        grid-column: 3 / 4;
+        grid-row: 3 / 4;
+    }
+    section {
+        /* height: 75%; */
+        margin: 0;
+    }
+    section li {
+        line-height: 2rem;
+    }
+}
+
