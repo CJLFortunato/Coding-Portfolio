@@ -5,14 +5,14 @@
     --clrpurple: #7e007e;
     box-sizing: border-box;
     font-family: var(--prgfont);
-    
-
 }
 body {
     width: 100%;
-    height: 100%;
-    
+    height: 100%; 
 }
+/* Mobile design */
+/* =============================================================================================================================================== */
+
 main {
     display: flex;
     flex-flow: column wrap;
@@ -61,10 +61,10 @@ h1 {
 section a {
      text-align: center;
      margin: 0 auto;
-     border: 1px solid red;
+     
  }
  section {
-    border: 1px solid red;
+    
     display: flex;
     flex-flow: column wrap;
     align-content: center;
@@ -76,7 +76,7 @@ section a {
  }
  hr {
      border-top: 1px solid var(--clrgrey);
-     width: 90%;
+     width: 70%;
  }
  .projects {
      position: relative;
@@ -92,7 +92,7 @@ section a {
      flex-flow: column nowrap;
  }
  .project legend{
-    border: 1px solid red;
+    
     text-align: center;
     font-family: var(--headerfont);
     font-size: 2rem;
@@ -101,8 +101,100 @@ section a {
     position: relative;
     top: 70%;
  }
-
  footer {
      position: relative;
      top: -20rem;
  }
+
+ /* Desktop version */
+ /* ======================================================================================================================================================== */
+
+ @media screen and (min-width: 768px) {
+
+ main {
+    padding-top: 2.5rem;
+} 
+.intro {
+    padding-bottom: 0;
+    display: block;
+    height: 1035px;
+} 
+h1 {
+        top: 15rem;
+        font-size: 96px;
+        margin: 0;
+        padding: 0;
+        font-weight: lighter;
+}
+.portrait {
+    position: relative;
+    top: -13rem;
+    width: 250px;
+    height: 250px;
+    border: 15px solid white;
+}
+.intro p {
+    top: -15rem;
+    width: 80%;
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    
+}
+.banner-image {
+    height: 800px;
+    
+}
+.intro a {
+    top: -15rem;
+    
+}
+section a {
+    left: 80%;
+    font-size: 1.8rem;
+}
+hr {
+    margin: 7% auto;
+    position: relative;
+    top: 2rem;
+}
+
+.projects {
+     top: 0;
+     width: 100%;
+     margin-bottom: 5rem;
+ }
+.row {
+    display: flex;
+    flex-flow: row nowrap; 
+    width: 90%;
+    justify-content: space-evenly;
+
+ }
+.project {
+    width: 30%;
+    height: 360px;
+}
+.project legend {
+    top: 95%;
+    color: black;
+}
+.projects a {
+    position: relative;
+    
+    left: 37%;
+    margin-top: 3rem;
+}
+
+footer {
+    top: 0;
+}
+.social-media {
+    width: 70%;
+    margin: 10px auto;
+    
+}
+.social-media p {
+    font-size: 1.5rem;
+}
+ }
+ 

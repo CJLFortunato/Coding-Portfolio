@@ -89,3 +89,57 @@ footer ul li {
 main {
     padding-top: 4rem;
 }
+
+/* Desktop version */
+/* ====================================================================================================================================================== */
+
+@media screen and (min-width: 768px) {
+
+    #hammenu {
+        display: none;
+    }
+    header {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-end;
+    }
+  
+    nav {
+        display: flex;
+        
+        width: 80%;
+        
+    }
+    nav ul {
+        
+        display: inline-flex;
+        color:white;
+        flex-wrap: nowrap;
+        width: 100%;
+        justify-content: flex-end;
+    }
+    nav ul li {
+        margin: 0 6%;
+    }
+    nav ul li a {
+        color:white;
+    }
+    .main-footer {
+        display: flex;
+        flex-flow: row nowrap;
+        
+        justify-content: space-between;
+        padding: 0 1%;
+    }
+    
+    .main-footer ul {
+        margin-right: 50%;
+    }
+    .main-footer ul li {
+        margin: 0.5rem;
+    }
+
+
+
+
+}
