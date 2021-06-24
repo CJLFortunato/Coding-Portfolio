@@ -16,6 +16,7 @@ main {
     display: flex;
     flex-flow: column wrap;
     align-content: center;
+    background-image: linear-gradient(transparent, white 70%),  url("../Ressources/bg-image_2.jpg");
 }
 .grid {
     width: 90%;
@@ -27,8 +28,17 @@ main {
     margin: 0 auto;
     width: 170px;
     height: 170px;
-    border: 8px solid black;
+    
     border-radius: 50%;
+}
+.portrait img {
+    object-fit: cover;
+    object-position: 50% 50%;
+    border: 8px solid white;
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    
 }
 h1 {
     text-align: center;
@@ -42,21 +52,49 @@ h2 {
     margin: 0%;
     padding: 5px;
 }
+/* Button */
 .download-btn {
     display: flex;
     justify-content: center;
     position: relative;
     top: 215px;
     margin-bottom: 5%;
-}
-button {
+    align-items: center;
     width: 70%;
+    
+    align-self: center;
 }
+#CV {
+    width: 100%;
+    border: 1px solid var(--clrpurple);
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: 400ms ease-in-out;
+    color:var(--clrpurple);
+}
+#CV:hover {
+    background-color: lightgray;
+    transform: scale(1.1);
+}
+#CV:active {
+    background-color: var(--clrpurple);
+    color: white;
+}
+
 section {
     margin: 15% 0;
     border: 1px solid var(--clrgrey);
     padding: 1%;
     border-radius: 5px;
+}
+section ul {
+    list-style-type: disc;
+}
+section ul li {
+    line-height: 1.8rem;
 }
 .skills {
     margin-top: 25%;
@@ -72,16 +110,26 @@ section {
         font-weight: lighter;
     }
     .download-btn {
-        justify-content: flex-start;
+        align-self: flex-start;
         top: 0;
         margin-bottom: 2rem;
         margin-left: 2%;
-    }
-    button {
         width: 20%;
     }
+    #CV {
+        font-size: 1.8rem;
+        border: 2px solid var(--clrpurple);
+    }
     .portrait {
-        margin: 0 auto;
+        padding: 0;
+    }
+    .portrait img {
+        object-fit: contain;
+        /* object-position: 120% 120%; */
+        
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
     }
 
     .grid {
@@ -124,6 +172,10 @@ section {
     section li {
         line-height: 2rem;
         font-size: 1.3rem;
+    }
+    h2 {
+        font-size: 2.5rem;
+        color: var(--clrpurple);
     }
 }
 

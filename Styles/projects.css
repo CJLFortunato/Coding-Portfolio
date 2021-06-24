@@ -18,6 +18,7 @@ main {
     flex-flow: column nowrap;
     align-content: center;
     /* padding-top: 5.5rem;  */
+    background-image: linear-gradient(transparent, white 70%),  url("../Ressources/bg-image_2.jpg");
 }
 h1 {
     text-align: center;

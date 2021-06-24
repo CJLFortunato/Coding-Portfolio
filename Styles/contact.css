@@ -20,7 +20,8 @@ main {
     align-items: center;
     width: 90%;
     margin: 0 auto;
-    border: 1px solid orange;
+    background-image: linear-gradient(transparent, white 70%),  url("../Ressources/bg-image_2.jpg");
+    
 }
 
 h1 {
