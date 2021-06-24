@@ -34,7 +34,14 @@ header p {
     background-color: var(--clrgrey);
     justify-self: flex-end;
 }
-
+header nav ul li a {
+    text-decoration: none;
+    transition: all 200ms ease-in-out;
+}
+header nav ul li a:hover {
+    color: var(--clrpurple);
+    font-size: 1.2rem;
+}
 /* ==== Footer ==== */
 
 footer {
@@ -77,6 +84,27 @@ footer ul {
 footer ul li {
     text-align: center;
     padding: 2px;
+    text-decoration: none;
+}
+footer a {
+    text-decoration: none;
+    color: var(--clrpurple);
+    transition: all 200ms ease-in-out;
+}
+footer a:hover {
+    font-size: 1.2rem;
+}
+footer ul li a {
+    text-decoration: none;
+    color: var(--clrgrey);
+}
+footer ul li a:hover {
+    font-size: 1.2rem;
+    color: var(--clrpurple);
+    transition: all 200ms ease-in-out;
+}
+#list-title {
+    opacity: 0.4;
 }
 .main-footer p {
     color: var(--clrgrey);
@@ -84,6 +112,7 @@ footer ul li {
     margin-bottom: 0;
     padding-bottom: 0;
 }
+
 
 /* ==== Main content ==== */
 
