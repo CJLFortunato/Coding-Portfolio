@@ -99,6 +99,11 @@ section ul li {
 .skills {
     margin-top: 25%;
 }
+em {
+    font-style: normal;
+    font-weight: 600;
+    color: var(--clrpurple);
+}
 
 /* ==================================================================================================================================== */
 /* Desktop version */

@@ -17,6 +17,7 @@ header {
     flex-flow: row nowrap;
     position: fixed;
     z-index: 10;
+    height: 55px;
 }
 header ul {
     display: none;
@@ -41,6 +42,12 @@ header nav ul li a {
 header nav ul li a:hover {
     color: var(--clrpurple);
     font-size: 1.2rem;
+}
+header nav ul li a[href="#"] {
+    color: var(--clrpurple);
+}
+header nav ul li a[href="#"]:hover {
+    font-size: 1rem;
 }
 /* ==== Footer ==== */
 
@@ -112,13 +119,19 @@ footer ul li a:hover {
     margin-bottom: 0;
     padding-bottom: 0;
 }
-
-
+i {
+    transform: scale(200%);
+    margin-bottom: 20px;
+}
+.social-media p {
+    display: none;
+}
 /* ==== Main content ==== */
 
 main {
     padding-top: 4rem;
 }
+
 
 /* Desktop version */
 /* ====================================================================================================================================================== */
@@ -176,8 +189,20 @@ main {
     .social-media p {
         font-size: 1.5rem;
     }
-     
-
+     .social-media div {
+        
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+     }
+    .social-media i {
+        display: inline;
+        
+        width: 30px;
+    }
+    .fa-icon {
+        transform: scale(300%);
+    }
 
 
 }

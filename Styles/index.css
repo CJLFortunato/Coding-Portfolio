@@ -53,18 +53,12 @@ h1 {
     margin: 0 auto;
     width: 170px;
     height: 170px;
-    
-    
-}
-.portrait img {
+    border-radius: 50%;
     object-fit: cover;
     object-position: 50% 50%;
-    
-    width: 170px;
-    height: 170px;
-    border-radius: 50%;
-    
+    border: 10px solid white;
 }
+
 .intro p {
    width: 90%; 
    margin: 0 auto;
@@ -73,13 +67,26 @@ h1 {
    font-size: 1.2rem;
    line-height: 1.8rem;
    background-color: white;
-   padding: 2%;
+   padding: 3%;
 }
 section a {
      text-align: center;
      margin: 0 auto;
+     text-decoration: none;
+     color: var(--clrpurple);
+     border: 1px solid var(--clrpurple);
+     padding: 10px;
+     border-radius: 10px;
      
  }
+ section a:hover {
+    background-color: lightgray;
+    transform: scale(1.1);
+}
+section a:active {
+    background-color: var(--clrpurple);
+    color: white;
+}
  section {
     
     display: flex;
@@ -94,20 +101,38 @@ section a {
  hr {
      border-top: 1px solid var(--clrgrey);
      width: 70%;
+     position: relative;
+     top: -22rem;
+     margin-bottom: 2rem;
  }
  .projects {
      position: relative;
      top: -21rem;
  }
+ .row {
+     width: 90%;
+    
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+
  .project {
      width: 90%;
      height: 230px;
      background-color: grey;
-     margin-bottom: 2rem;
+     margin-bottom: 4rem;
      border-radius: 10px;
      display: flex;
      flex-flow: column nowrap;
  }
+ .project:nth-child(1) {
+    margin-bottom: 10rem;
+ }
+ .project:nth-child(2) {
+    margin-bottom: 10rem;
+ }
+
  .project legend{
     
     text-align: center;
@@ -118,10 +143,10 @@ section a {
     position: relative;
     top: 70%;
  }
- footer {
+ /* footer {
      position: relative;
      top: -20rem;
- }
+ } */
 
  /* Desktop version */
  /* ======================================================================================================================================================== */
@@ -129,7 +154,8 @@ section a {
  @media screen and (min-width: 768px) {
 
  main {
-    padding-top: 2.5rem;
+    padding-top: 0;
+    
 } 
 .intro {
     padding-bottom: 0;
@@ -138,7 +164,7 @@ section a {
 } 
 h1 {
         top: 15rem;
-        font-size: 96px;
+        font-size: 8rem;
         margin: 0;
         padding: 0;
         /* font-weight: lighter; */
