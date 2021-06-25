@@ -24,7 +24,17 @@
                 <li><a href="about.html">About Me</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
-            <img src="" alt="" id="hammenu">
+            <div class="dropdown">
+            
+              <button ontouchstart="dropdownFunc()" class="drop-btn"><i class="fas fa-bars"></i></button>
+              <div id="myDropdown" class="dropdown-content">
+                    <a href="#">Home</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="about.html">About Me</a>
+                    <a href="contact.html">Contact</a>
+              </div>  
+            </div>
+            
         </nav>
     </header>
     <main>
@@ -76,6 +86,28 @@
             </ul>
         </div>
     </footer>
+    <script>        
+        /* When the user clicks on the button,
+        toggle between hiding and showing the dropdown content */
+        function dropdownFunc() {
+        document.getElementById("myDropdown").classList.toggle("show");
+        console.log('test');
+        }
+
+        // Close the dropdown menu if the user clicks outside of it
+        window.ontouchstart = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
 </body>
 </html>
 
