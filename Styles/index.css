@@ -98,16 +98,11 @@ section a:active {
      position: relative;
      top: -24rem;
  }
- hr {
-     border-top: 1px solid var(--clrgrey);
-     width: 70%;
-     position: relative;
-     top: -22rem;
-     margin-bottom: 2rem;
- }
+ 
  .projects {
      position: relative;
      top: -21rem;
+     margin-bottom: 0;
  }
  .row {
      width: 90%;
@@ -157,6 +152,12 @@ section a:active {
     padding-top: 0;
     
 } 
+.project:nth-child(1) {
+    margin-bottom: 4rem;
+ }
+ .project:nth-child(2) {
+    margin-bottom: 4rem;
+ }
 .intro {
     padding-bottom: 0;
     display: block;
@@ -188,7 +189,7 @@ h1 {
 }
 
 .intro p {
-    top: -15rem;
+    top: -17rem;
     width: 80%;
     font-size: 1.8rem;
     line-height: 2.5rem;
@@ -207,31 +208,38 @@ section a {
     left: 80%;
     font-size: 1.8rem;
 }
-hr {
-    margin: 7% auto;
-    position: relative;
-    top: 2rem;
-}
+
 
 .projects {
-     top: 0;
+     top: 200px;
      width: 100%;
-     margin-bottom: 5rem;
+     margin-bottom: 12rem;
+     margin-top: 3rem;
+
+     
  }
 .row {
     display: flex;
     flex-flow: row nowrap; 
     width: 90%;
     justify-content: space-evenly;
+    align-content: center;
+    border: 1px solid var(--clrgrey);
+    height: 500px;
+    border-radius: 10px;
+    
 
  }
 .project {
     width: 30%;
     height: 360px;
+    
+
 }
 .project legend {
     top: 95%;
     color: black;
+    
 }
 .projects a {
     position: relative;
@@ -243,5 +251,6 @@ hr {
 footer {
     top: 0;
 }
+
  }
  
