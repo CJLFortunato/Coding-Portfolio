@@ -30,7 +30,7 @@ header p {
 }
 /* ===================================================================== */
 /* Dropdown button */
-nav {
+ nav {
     
     float: right;
     position: relative;
@@ -59,17 +59,16 @@ nav {
     transform: translate(6px, 9px) scale(250%);
 }
 .drop-btn:focus, .drop-btn:active {
-    background-color: var(--clrpurple);
+    color: var(--clrpurple);
 }
 .dropdown-content {
     display: none;
-    position: absolute;
-    right: -20px;
-    background-color: black;
+    position: fixed;
+    right: 0px;
     
     min-width: 100px;
     min-height: 200px;
-    z-index: 2;
+    z-index: 5;
   }
   .dropdown-content a {
     display: block;
@@ -78,13 +77,22 @@ nav {
     text-decoration: none;
     padding: 1rem 0;
     border-bottom: 1px solid var(--clrgrey);
+    background-color: black;
+  }
+  .dropdown-content i {
+      margin: 0;
+      padding: 0;
+      
+  }
+  .dropdown-content a:nth-child(5) {
+    background-color: transparent;
+      border: none;
+      color: black;
   }
   .dropdown-content a:focus, .dropdown-content a:active {
-      background-color: var(--clrpurple);
-  }
-.show {
-    display:block;
-}
+      background-color: var(--clrgrey);
+  } 
+
 /* ====================================================================== */
 header nav ul li a {
     text-decoration: none;

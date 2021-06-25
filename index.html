@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./Styles/mainstyle.css" type="text/css">
     <link rel="stylesheet" href="./Styles/index.css" type="text/css">
     <title>CJL Fortunato | Portfolio | Home</title>
+    
 </head>
 <body>
     <header>
@@ -25,13 +26,13 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
             <div class="dropdown">
-            
-              <button ontouchstart="dropdownFunc()" class="drop-btn"><i class="fas fa-bars"></i></button>
+              <button class="drop-btn" id="drop-btn"><i class="fas fa-bars"></i></button>
               <div id="myDropdown" class="dropdown-content">
                     <a href="#">Home</a>
                     <a href="projects.html">Projects</a>
                     <a href="about.html">About Me</a>
                     <a href="contact.html">Contact</a>
+                    <a href="" id="close-btn"><i class="fas fa-times-circle"></i> </a>
               </div>  
             </div>
             
@@ -67,7 +68,7 @@
             
             <a href="projects.html">See more projects</a>
         </section>
-        
+        <script src="./Scripts/dropdown.js"></script> 
     </main>
     <footer>
         <div class="social-media">
@@ -86,28 +87,6 @@
             </ul>
         </div>
     </footer>
-    <script>        
-        /* When the user clicks on the button,
-        toggle between hiding and showing the dropdown content */
-        function dropdownFunc() {
-        document.getElementById("myDropdown").classList.toggle("show");
-        console.log('test');
-        }
-
-        // Close the dropdown menu if the user clicks outside of it
-        window.ontouchstart = function(event) {
-        if (!event.target.matches('.dropbtn')) {
-            var dropdowns = document.getElementsByClassName("dropdown-content");
-            var i;
-            for (i = 0; i < dropdowns.length; i++) {
-                var openDropdown = dropdowns[i];
-                if (openDropdown.classList.contains('show')) {
-                    openDropdown.classList.remove('show');
-                    }
-                }
-            }
-        }
-    </script>
 </body>
 </html>
 
