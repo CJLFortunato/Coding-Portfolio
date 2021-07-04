@@ -1,32 +1,31 @@
 
-#Portfolio website
+# Portfolio website
 
 https://cjlfortunato.github.io/Coding-Portfolio/
 
 
-##Stack
+## Stack
 
 * HTML5
 * CSS3
 * Vanilla JavaScript
 
-##Structure
+## Structure
 
 * Homepage/index
 * Projects
 * CV/ About me
 * Contact
 
-##JavaScript features
+## JavaScript features
 
-1. Contact form that sends me an email when filled
+1. ~~Contact form that sends me an email when filled~~[That's more of a backend task. Oh well]
 2. Downloadable résumé pdf
 3. Dropdown menu for mobile version
 
-##Design
+## Design
 
-Flat, minimal design
-Modern
-Color palette: black and white + purple accents
-Chromatic abberration on text?
-Sans-serif or monotype fonts
+* Flat, minimal design
+* Modern
+* Color palette: black and white + purple accents
+* Sans-serif and monotype fonts
