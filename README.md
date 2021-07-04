@@ -1,6 +1,8 @@
 
 #Portfolio website
 
+https://cjlfortunato.github.io/Coding-Portfolio/
+
 
 ##Stack
 
@@ -25,6 +27,6 @@
 
 Flat, minimal design
 Modern
-Color palette: the ace pride flag
+Color palette: black and white + purple accents
 Chromatic abberration on text?
 Sans-serif or monotype fonts
