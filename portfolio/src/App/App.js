@@ -1,6 +1,11 @@
 import React from "react";
 import "./reset.css";
 import './App.css';
+import { ContactInfo } from "../Components/ContactInfo.js";
+import { Presentation } from "../Components/Presentation.js";
+import { Projects } from "../Components/Projects";
+import { Skills } from "../Components/Skills";
+import { Background } from "../Components/Background";
 
 function App() {
   return (
@@ -8,19 +13,23 @@ function App() {
       <header>
       <nav>
             <ul>
-                <li><a href="">Introduction</a></li> 
-                <li><a href="">Background</a></li>
-                <li><a href="">Skills</a></li>
-                <li><a href="">Projects</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="#introduction">Introduction</a></li> 
+                <li><a href="#background">Background</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul> 
         </nav>
       </header>
       <main>
-
+        <Presentation />
+        <Background />
+        <Skills />
+        <Projects />
+        <ContactInfo />
       </main>
       <footer>
-        <p>Site built by CJL Fortunato. For more details see <a href="">the Projects section</a>.</p>
+        <p>Site built by CJL Fortunato. For more details see <a href="#projects">the Projects section</a>.</p>
       </footer>
     </div>
   );
