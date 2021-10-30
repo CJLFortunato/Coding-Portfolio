@@ -5,7 +5,10 @@
   --clrpurple: #7e007e;
   box-sizing: border-box;
   font-family: var(--prgfont);
-
+}
+body {
+  background-image: url(./Ressources/bg-image_2.jpg);
+  background-size: cover;
 }
 /* ==== Header ==== */
 
@@ -64,7 +67,7 @@ h2 {
   padding: 2%;
   padding-top: 55px;
   border: 1px solid var(--clrpurple);
-  background-image: url(../Ressources/banner-image_desat.JPG);
+  background-image: url(./Ressources/banner-image_desat.JPG);
   height: 700px;
 }
 .presentation p {
@@ -93,12 +96,14 @@ h2 {
   padding: 2%;
   height: 700px;
 }
+
 .skills {
   border: 1px solid var(--clrpurple);
   padding: 2%;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-evenly;
+  background-color: hsla(0, 0%, 0%, 0.3);
 }
 .skill-card {
   width: 150px;
@@ -106,8 +111,18 @@ h2 {
   background-color: white;
   box-shadow: -1px 7px 10px hsla(0, 0%, 0%, 0.2);
 }
+.skill-card p {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
 .skill-card i {
   color: black;
+  font-size: 2.5rem;
+  
+}
+.one-line i{
+  margin-bottom: 1rem;
 }
 .skills-grid-container {
   display: grid;
@@ -130,7 +145,56 @@ h2 {
 .contact-info {
   border: 1px solid var(--clrpurple);
   padding: 2%;
+  background-color: hsla(0, 0%, 0%, 0.3);
+}
+.contact-info ul {
+  
+  padding: 0;
+  margin: 2rem 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+
 }
 
+.contact-info li {
+  padding: 1%;
+  width: 20%;
+  list-style-type: none;
+  transition: all 200ms ease-in-out;
+  margin: 0;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 1.1rem;
+
+}
+.contact-info li a {
+  text-decoration: none;
+  color: white;
+  width: 100%;
+  height: 100%;
+
+}
+.contact-info li:nth-child(1) {
+  background-color: firebrick;
+}
+.contact-info li:nth-child(2) {
+  background-color: midnightblue;
+}
+.contact-info li:nth-child(3) {
+  background-color: dodgerblue;
+}
+.contact-info li:nth-child(4) {
+  background-color: mediumseagreen;
+}
+.contact-info i {
+  padding: 0 3%;
+  transform: scale(150%);
+  color: white;
+  float: left;
+}
+.contact-info li:hover {
+  transform: scale(110%);
+}
 
 
