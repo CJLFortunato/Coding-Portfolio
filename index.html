@@ -1,91 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="CJL Fortunato's portfolio website"
-    />
-    
-    <script src="https://kit.fontawesome.com/ca9ca94b48.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <title>CJL Fortunato | Portfolio</title>
-  </head>
-  <body>
-	<header>
-      <nav>
-            <ul>
-                <li><a href="#introduction">Introduction</a></li> 
-                <li><a href="#background">Background</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul> 
-        </nav>
-      </header>
-<main>
-        <section className="presentation">
-            <h1 id="introduction">Hello World!</h1>
-            <h2>I'm CJL Fortunato, Front-End Web Developper</h2>
-            <img src={profilPicture} alt="CJL Fortunato" className="profile-picture" />
-            
-            <p>I am a Front-End web designer currently based in Bordeaux, France. My background in visual arts gives me a unique 
-            perspective and plenty of design stills to apply to your projects.</p>
-            
-        </section>
-        <section className="background">
-            <h2 id="background">My background</h2>
-            <img src={portrait} alt="" className="portrait" />
-            
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                Fugit ipsam iste sed blanditiis illo in corporis commodi delectus explicabo est itaque nobis, 
-                esse neque ratione sint provident necessitatibus laborum? Quaerat.</p>
-            
-                <img src={portrait} alt="" className="timeline" />
-            
-        </section>
-        <section className="skills">
-            <div className="skills-desc-container">
-                <h2 id="skills">Skills</h2>
-                <p>Here are the abilities I bring to the table.</p>
-            </div>
-            <div className="skills-grid-container">
-                <div className="skill-card">
-            		<p><i class="fa-solid fa-code"></i></p>
-            		<p>HTML5</p>
-        	</div>
-            </div>
-        </section>
-        <section className="projects">
-            <h2 id="projects">Sample Projects</h2>
-            <p>Here are the projects I've built to demonstrate my abilities.</p>
-            <div className="project-card">
-            	<img src="" alt=""/>
-            	<h3>Portfolio</h3>
-            	<p>Lorem Ipsum yada yada</p>
-            	<a href="">View deployed project</a>
-            	<a href="">View project GitHub</a>
-            </div>
-        </section>
-        <section className="contact-info">
-            <h2>Contact Me</h2>
-        	<p>Like what you see? Please contact me so we can discuss how I can be of value for your project!</p>
-        	<p>You can find me at:</p>
-        	<ul>
-            		<li><i className="fas fa-envelope"></i><a href="mailto:clemence.fortunato@gmail.com" target="_blank" rel="noreferrer">clemence.fortunato@gmail.com</a></li>
-            		<li><i className="fab fa-linkedin"></i><a href="https://www.linkedin.com/in/clemencefortunato" target="_blank" rel="noreferrer">LinkedIn</a></li>
-            		<li><i className="fab fa-twitter-square"></i><a href="https://twitter.com/cjlfortunato" target="_blank" rel="noreferrer">Twitter</a></li>
-            		<li><i className="fab fa-github"></i><a href="https://github.com/CJLFortunato" target="_blank" rel="noreferrer">GitHub</a></li>
-        	</ul>
-        </section>
-      </main>
-      <footer>
-        <p>Site built by CJL Fortunato. For more details see <a href="#projects">the Projects section</a>.</p>
-      </footer>
-  </body>
-</html>	
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="CJL Fortunato's portfolio website" />
+
+  <script src="https://kit.fontawesome.com/ca9ca94b48.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+  <title>CJL Fortunato | Portfolio</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#background">Background</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+
+    <section class="presentation">
+      <h1 id="introduction">Hello World!</h1>
+      <h2>I'm CJL Fortunato, Front-End Web Developper</h2>
+      <img src="./Ressources/photo_profil_copy.jpg" alt="CJL Fortunato" class="profile-picture" />
+
+      <p>I am a self-taught Front-End web developper currently based in Bordeaux, France. My background in visual arts gives me a
+        unique perspective and plenty of design stills to apply to your projects.</p>
+
+    </section>
+
+    <section class="background">
+      <h2 id="background">My background</h2>
+      <img src="" alt="" class="portrait" />
+
+      <p>My path is not a straight line. I went to art school to become a video game environment artist and graduated in 2016. 
+        I completed a 6 month intership in early 2017, and then several online courses over the years. In early 2021, I decided 
+        to change course and teach myself web development. Despite the hardships, these experiences gave me unique insights and 
+        plenty of transferable skills.</p>
+
+      <img src="" alt="" class="timeline" />
+
+    </section>
+
+    <section class="skills">
+      <div class="skills-desc-container">
+        <h2 id="skills">Skills</h2>
+        <p>Here are the abilities I bring to the table.</p>
+      </div>
+      <div class="skills-grid-container">
+        <div class="skill-card">
+          <p><i class="fas fa-code"></i></p>
+          <p>HTML5</p>
+        </div>
+        <div class="skill-card">
+          <p><i class="fab fa-css3"></i></p>
+          <p>CSS3</p>
+        </div>
+        <div class="skill-card">
+          <p><i class="fab fa-js"></i></p>
+          <p>JavaScript</p>
+        </div>
+        <div class="skill-card">
+          <p><i class="fab fa-react"></i></p>
+          <p>React</p>
+        </div>
+        <div class="skill-card">
+          <p><i class="fas fa-atom"></i></p>
+          <p>Redux</p>
+        </div>
+        <div class="skill-card">
+          <p><i class="fab fa-git-alt"></i></p>
+          <p>Git and GitHub</p>
+        </div>
+        <div class="skill-card">
+          <p><i class="fas fa-palette"></i></p>
+          <p>Visual Design</p>
+        </div>
+        <div class="skill-card">
+          <p><i class="fas fa-crop"></i></p>
+          <p>Photo manipulation</p>
+        </div>
+        <div class="skill-card">
+          <p><i class="fab fa-accessible-icon"></i></p>
+          <p>Accessibility standards</p>
+        </div>
+        <div class="skill-card">
+          <p><i class="far fa-comments"></i></p>
+          <p>English</p>
+        </div>
+        <div class="skill-card">
+          <p><i class="far fa-comments"></i></p>
+          <p>French</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects">
+      <h2 id="projects">Sample Projects</h2>
+      <p>Here are the projects I've built to demonstrate my abilities.</p>
+      <div class="project-card">
+        <img src="" alt="" />
+        <h3>Portfolio</h3>
+        <p>This very website! It is a simple static page, but I thought you might find the way I structured my HTML and CSS interesting.</p>
+        <a href="">View deployed project</a>
+        <a href="">View project GitHub</a>
+      </div>
+      <div class="project-card">
+        <img src="" alt="" />
+        <h3>Dice roller</h3>
+        <p>This is a simple dice roller webpage I made with HTML, CSS and vanilla JS, with a focus on role-playing games. 
+          It is useful if you forgot your dice, or if you don't have enough d6 to roll that fireball damage.</p>
+        <a href="">View deployed project</a>
+        <a href="">View project GitHub</a>
+      </div>
+      <div class="project-card">
+        <img src="" alt="" />
+        <h3>Goblin market</h3>
+        <p>I built this one for the final project in the Codecademy Front-end engineer Career Path. 
+          It simulates an e-commerce website, with a fantasy twist: this is where you can buy illegal and dangerous magical objects and reagents. 
+          It is non-functional, as it has no back-end. The main functionalities are there, but it is still a work in progress.</p>
+        <a href="">View deployed project</a>
+        <a href="">View project GitHub</a>
+      </div>
+    </section>
+
+    <section class="contact-info">
+      <h2>Contact Me</h2>
+      <p>Do you think I can help you? Please contact me so we can discuss how I can be of value for your project!</p>
+      <p>You can find me at:</p>
+      <ul>
+        <li><i class="fas fa-envelope"></i><a href="mailto:clemence.fortunato@gmail.com" target="_blank"
+            rel="noreferrer">clemence.fortunato@gmail.com</a></li>
+        <li><i class="fab fa-linkedin"></i><a href="https://www.linkedin.com/in/clemencefortunato" target="_blank"
+            rel="noreferrer">LinkedIn</a></li>
+        <li><i class="fab fa-twitter-square"></i><a href="https://twitter.com/cjlfortunato" target="_blank"
+            rel="noreferrer">Twitter</a></li>
+        <li><i class="fab fa-github"></i><a href="https://github.com/CJLFortunato" target="_blank"
+            rel="noreferrer">GitHub</a></li>
+      </ul>
+    </section>
+
+  </main>
+  <footer>
+    <p>Site built by CJL Fortunato. For more details see <a href="#projects">the Projects section</a>.</p>
+  </footer>
+</body>
+
+</html>
