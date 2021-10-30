@@ -35,33 +35,32 @@
 
     <section class="presentation">
       <h1 id="introduction">Hello World!</h1>
-      <h2>I'm CJL Fortunato, Front-End Web Developper</h2>
+      <h2 id="no-line">I'm CJL Fortunato, Front-End Web Developper</h2>
       <img src="./Ressources/photo_profil_copy.jpg" alt="CJL Fortunato" class="profile-picture" />
 
       <p>I am a self-taught Front-End web developper currently based in Bordeaux, France. My background in visual arts gives me a
-        unique perspective and plenty of design stills to apply to your projects.</p>
+        unique perspective and plenty of design skills to apply to your projects.</p>
 
     </section>
 
     <section class="background">
       <h2 id="background">My background</h2>
-      <img src="" alt="" class="portrait" />
-
-      <p>My path is not a straight line. I went to art school to become a video game environment artist and graduated in 2016. 
-        I completed a 6 month intership in early 2017, and then several online courses over the years. In early 2021, I decided 
-        to change course and teach myself web development. Despite the hardships, these experiences gave me unique insights and 
-        plenty of transferable skills.</p>
-
-      <img src="" alt="" class="timeline" />
+      <div class="background-container">
+        <img src="" alt="" class="portrait" />
+        <p>My path is not a straight line. I initially went to art school to become a video game environment artist. In early 2021, I decided 
+          to change course and teach myself web development.
+          I started with HTML and CSS, then moved on to JavaScript, React and Redux. My next steps are learning new JavaScript frameworks and PHP.
+          </p>
+      </div>
+      
 
     </section>
 
     <section class="skills">
-      <div class="skills-desc-container">
-        <h2 id="skills">Skills</h2>
-        <p>Here are the abilities I bring to the table.</p>
-      </div>
-      <div class="skills-grid-container">
+      <h2 id="skills">Skills</h2>
+      <div class="skills-container">
+        <p>Here are the abilities I bring to the table. This section is bound to fill up, since I am still learning!</p>
+        <div class="skills-grid-container">
         <div class="skill-card one-line">
           <p><i class="fas fa-code"></i></p>
           <p>HTML5</p>
@@ -107,32 +106,37 @@
           <p>French</p>
         </div>
       </div>
+      </div>
+      
     </section>
 
     <section class="projects">
       <h2 id="projects">Sample Projects</h2>
       <p>Here are the projects I've built to demonstrate my abilities.</p>
-      <div class="project-card">
-        <img src="" alt="" />
+      <div class="project-card left">
         <h3>Portfolio</h3>
         <p>This very website! It is a simple static page, but I thought you might find the way I structured my HTML and CSS interesting.</p>
         <a href="">View deployed project</a>
         <a href="">View project GitHub</a>
       </div>
-      <div class="project-card">
-        <img src="" alt="" />
+      <div class="project-card right">      
         <h3>Dice roller</h3>
         <p>This is a simple dice roller webpage I made with HTML, CSS and vanilla JS, with a focus on role-playing games. 
           It is useful if you forgot your dice, or if you don't have enough d6 to roll that fireball damage.</p>
         <a href="">View deployed project</a>
         <a href="">View project GitHub</a>
       </div>
-      <div class="project-card">
-        <img src="" alt="" />
+      <div class="project-card left">
         <h3>Goblin market</h3>
         <p>I built this one for the final project in the Codecademy Front-end engineer Career Path. 
           It simulates an e-commerce website, with a fantasy twist: this is where you can buy illegal and dangerous magical objects and reagents. 
-          It is non-functional, as it has no back-end. The main functionalities are there, but it is still a work in progress.</p>
+          It is non-functional, as it has no back-end. The main functionalities are there, but it is still a work in progress. Made with React and Redux.</p>
+        <a href="">View deployed project</a>
+        <a href="">View project GitHub</a>
+      </div>
+      <div class="project-card right">      
+        <h3>Jammming</h3>
+        <p>This one is a Codecademy project. Using the Spotify API, it lets the user search for tracks and add them to a new playlist on their Spotify account. Made with React.</p>
         <a href="">View deployed project</a>
         <a href="">View project GitHub</a>
       </div>

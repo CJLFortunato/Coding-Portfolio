@@ -23,7 +23,7 @@ header {
   flex-flow: row nowrap;
   justify-content: flex-start;
   flex-shrink: 2;
-  box-shadow: 0px 10px 10px hsla(0, 0%, 0%, 0.1);
+  box-shadow: 0px 7px 0px hsla(0, 0%, 0%, 0.1);
 }
 nav {
   display: flex;
@@ -51,6 +51,7 @@ nav ul li a {
   font-family: var(--headerfont);
   font-size: 1.5rem;
   font-weight: bold;
+  padding: 7px;
 }
 h1 {
   font-family: var(--headerfont);
@@ -62,21 +63,37 @@ h1 {
 h2 {
   font-family: var(--headerfont);
   font-size: 2.5rem;
+  border-bottom: 2px solid var(--clrpurple);
+  margin-top: 0;
 }
+#no-line {
+  border: none;
+}
+
+a:hover {
+  background-color: hsla(0, 0%, 7%, 0.2);
+  
+}
+a:active {
+  background-color: var(--clrpurple);
+  color: white;
+}
+
+
 .presentation {
   padding: 2%;
   padding-top: 55px;
-  border: 1px solid var(--clrpurple);
+  
   background-image: url(./Ressources/banner-image_desat.JPG);
   height: 700px;
 }
 .presentation p {
   /* border: 1px solid red; */
   width: 35%;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   line-height: 2.5rem;
   margin: 1% auto;
-  text-align: center;
+  text-align: left;
 }
 .profile-picture {
   border-radius: 50%;
@@ -85,6 +102,7 @@ h2 {
   left: 70%;
   margin: 0;
   top: 18%;
+  border: 6px solid black;
 }
 .presentation h2 {
   margin-left: 8%;
@@ -92,29 +110,62 @@ h2 {
 }
 
 .background {
-  border: 1px solid var(--clrpurple);
   padding: 2%;
-  height: 700px;
+  /* height: 700px; */
+}
+.background p {
+  font-size: 1.4rem;
+  line-height: 2.5rem;
+  width: 45%;
+  /* position: relative; */
+  /* left: 50%; */
+  /* margin: 5% 0; */
+}
+.background h2 {
+  text-align: right;
+}
+.portrait{
+  width: 250px;
+  height: 400px;
+  background-color: var(--clrgrey);
+  /* margin-left: 3%; */
+  box-shadow: 10px 10px 0px var(--clrpurple);
+}
+.background-container {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .skills {
-  border: 1px solid var(--clrpurple);
   padding: 2%;
+  background-color: hsla(0, 0%, 0%, 0.3);
+}
+.skills-container {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-evenly;
-  background-color: hsla(0, 0%, 0%, 0.3);
+  align-items: center;
+}
+.skills p {
+  font-size: 1.4rem;
+  line-height: 2.5rem;
+  width: 35%;
 }
 .skill-card {
   width: 150px;
   height: 130px;
   background-color: white;
-  box-shadow: -1px 7px 10px hsla(0, 0%, 0%, 0.2);
+  box-shadow: 7px 7px 0px hsla(0, 0%, 0%, 0.2);
+  /* border: 1px dashed var(--clrpurple); */
 }
 .skill-card p {
   text-align: center;
   font-size: 1.2rem;
   font-weight: bold;
+  line-height: initial;
+  width: 100%;
 }
 .skill-card i {
   color: black;
@@ -134,46 +185,76 @@ h2 {
 
 
 .projects {
-  border: 1px solid var(--clrpurple);
   padding: 2%;
+}
+.projects h2 {
+  text-align: right;
+}
+.projects p {
+  font-size: 1.4rem;
+  line-height: 2.5rem;
 }
 .project-card {
-  border: 1px solid var(--clrgrey);
+  padding: 1%;
+  margin: .5rem 0 1rem 0;
+  background-color: hsla(0, 0%, 0%, 0.2);
+  box-shadow: 7px 7px 0px hsla(0, 0%, 0%, 0.3);
+  /* border: 1px dashed var(--clrpurple); */
 }
-
+.project-card h3{
+  margin: 0;
+  font-size: 1.5rem;
+  border-bottom: 1px solid black;
+}
+.project-card p {
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+}
+.project-card a {
+  color: var(--clrpurple);
+  text-decoration: none;
+  margin: .5rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 8px;
+}
+.left {
+  text-align: left;
+  padding-left: 2%;
+}
+.right {
+  text-align: right;
+  padding-right: 2%;
+}
 
 .contact-info {
-  border: 1px solid var(--clrpurple);
+  height: 500px;
   padding: 2%;
-  background-color: hsla(0, 0%, 0%, 0.3);
+  background-color: hsla(0, 0%, 7%, 0.3);
 }
 .contact-info ul {
-  
   padding: 0;
-  margin: 2rem 0;
+  margin: 3rem 0;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
-
 }
-
 .contact-info li {
   padding: 1%;
   width: 20%;
   list-style-type: none;
-  transition: all 200ms ease-in-out;
+  transition: all 300ms ease-in-out;
   margin: 0;
   border-radius: 10px;
   text-align: center;
-  font-size: 1.1rem;
-
+  font-size: 1.25rem;
 }
 .contact-info li a {
   text-decoration: none;
   color: white;
   width: 100%;
   height: 100%;
-
+  /* font-size: 1.2rem; */
 }
 .contact-info li:nth-child(1) {
   background-color: firebrick;
@@ -194,7 +275,25 @@ h2 {
   float: left;
 }
 .contact-info li:hover {
-  transform: scale(110%);
+  transform: scale(108%);
+}
+.contact-info p {
+  font-size: 1.4rem;
+  line-height: 2.5rem;
+}
+.contact-info li a:hover {
+  background-color: transparent;
+}
+
+footer {
+  box-shadow: 0px -7px 0px hsla(0, 0%, 0%, 0.1);
+  background-color: white;
+  border: 1px solid white;
+  padding-left: 1%;
+}
+footer a{
+  text-decoration: none;
+  color: var(--clrpurple);
 }
 
 
