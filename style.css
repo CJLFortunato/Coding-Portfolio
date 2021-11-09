@@ -56,9 +56,10 @@ nav ul li a {
 h1 {
   font-family: var(--headerfont);
   font-size: 4rem;
-  text-align: center;
-  padding-left: 0%;
-  margin-top: 5%;  
+  text-align: left;
+  padding-left: 5%;
+  margin-top: 5%;
+  text-shadow: 3px 3px 0px var(--clrpurple);  
 }
 h2 {
   font-family: var(--headerfont);
@@ -68,6 +69,7 @@ h2 {
 }
 #no-line {
   border: none;
+  text-shadow: 2px 2px 0px var(--clrpurple);
 }
 
 a:hover {
@@ -89,13 +91,15 @@ a:active {
 }
 .presentation p {
   /* border: 1px solid red; */
-  width: 35%;
-  font-size: 1.4rem;
+  width: 60%;
+  font-size: 1.5rem;
   line-height: 2.5rem;
-  margin: 1% auto;
+  margin: 4% 0;
+  margin-left: 40%;
   text-align: left;
+  text-shadow: 1px 1px 0px var(--clrpurple);
 }
-.profile-picture {
+/* .profile-picture {
   border-radius: 50%;
   width: 400px;
   position: absolute;
@@ -103,10 +107,10 @@ a:active {
   margin: 0;
   top: 18%;
   border: 6px solid black;
-}
+} */
 .presentation h2 {
-  margin-left: 8%;
-  margin-top: 5%;
+  margin-left: 20%;
+  margin-top: 4%;
 }
 
 .background {
@@ -125,8 +129,8 @@ a:active {
   text-align: right;
 }
 .portrait{
-  width: 250px;
-  height: 400px;
+  /* width: 250px; */
+  height: 500px;
   background-color: var(--clrgrey);
   /* margin-left: 3%; */
   box-shadow: 10px 10px 0px var(--clrpurple);
@@ -296,4 +300,11 @@ footer a{
   color: var(--clrpurple);
 }
 
-
+a:hover {
+  background-color: hsla(0, 0%, 7%, 0.2);
+  
+}
+a:active {
+  background-color: var(--clrpurple);
+  color: white;
+}
