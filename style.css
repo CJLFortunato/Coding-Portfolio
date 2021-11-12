@@ -190,12 +190,15 @@ a:active {
 
 .projects {
   padding: 2%;
+  padding-bottom: 3%;
 }
 .projects-grid-container {
   display: grid;
-  grid-template-columns: 40% 40%;
+  grid-template-columns: 1fr 1fr;
   margin: 0 auto;
-  gap: 30px;
+  gap: 3%;
+  width: 90%;
+  
 }
 .projects h2 {
   text-align: right;
@@ -211,41 +214,59 @@ a:active {
   box-shadow: 7px 7px 0px hsla(0, 0%, 0%, 0.3);
   /* border: 1px dashed var(--clrpurple); */
   height: 350px;
-  display: grid;
-  grid-template-areas: 
-          "a a a"
-          "b c c"
-          "d . e"
+  display: flex;
+  flex-flow: row nowrap;
+  
+}
+.project-card-img-p-ctn {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-items: flex-start;
+  align-items: flex-start;
+  padding: 2%;
+  
+  
 }
 .project-card h3{
   margin: 0;
   font-size: 1.5rem;
   border-bottom: 1px solid black;
-  grid-area: a;
+  
+  width: 100%;
 }
 .project-card p {
   font-size: 1.2rem;
   line-height: 1.7rem;
-  grid-area: c;
+  height: 15rem;
+  
+  
+  
 }
+.link-ctn {
+  display: flex;
+  flex-flow: row nowrap;
+  
+  margin: 0;
+}
+                  
+                
 .project-card a {
   color: var(--clrpurple);
   text-decoration: none;
-  margin: .5rem;
+  /* margin: .5rem; */
   font-size: 1.1rem;
   font-weight: bold;
   padding: 8px;
+  justify-self: flex-end;
 }
 .project-card img {
-  width: 100px;
-  grid-area: b;
+  height: 95%;
+  align-self: center;
+  box-shadow: 7px 7px 0px var(--clrpurple);
+  margin-right: 2%;
+  
 }
-.deployed {
-  grid-area: d;
-}
-.github {
-  grid-area: e;
-}
+
 
 .contact-info {
   height: 500px;
