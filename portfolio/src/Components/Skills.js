@@ -41,11 +41,11 @@ function Skills() {
             <p>SQL</p>
           </div>
           <div className="skill-card one-line">
-            <p><i class="fa-brands fa-node-js"></i></p>
+            <p><i className="fa-brands fa-node-js"></i></p>
             <p>NodeJS</p>
           </div>
           <div className="skill-card one-line">
-            <p><i class="fa-regular fa-copy"></i></p>
+            <p><i className="fa-regular fa-copy"></i></p>
             <p>MongoDB</p>
           </div>
           <div className="skill-card one-line">

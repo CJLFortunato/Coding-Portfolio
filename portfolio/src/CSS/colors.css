@@ -1,19 +1,83 @@
 /*
-This file is for the display and organizing of elements
+This file is for the color scheme
 */
 .App {
-  background-color: palevioletred;
+  background: rgb(131, 58, 180);
+  background: linear-gradient(180deg, rgb(11, 0, 40) 0%, rgb(37, 9, 84) 24%, rgb(93, 16, 122) 53%, rgb(184, 37, 115) 84%, rgb(255, 138, 117) 100%);
 }
 
 .App-header {
+  background: linear-gradient(180deg, rgb(25, 0, 40) 0%, rgba(25, 0, 40, 0.2) 100%);
   background-color: transparent;
 }
+.App-header h4 {
+  font-family: "Passion One", sans-serif;
+  font-weight: 900;
+  background: linear-gradient(180deg, rgb(0, 116, 255) 0%, rgb(111, 228, 255) 51%, rgb(167, 0, 104) 52%, rgb(255, 0, 206) 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 3rem;
+}
+.App-header nav ul li a {
+  color: #ff0b72;
+  text-decoration: none;
+}
+.App-header nav ul li a:hover {
+  text-shadow: 0px 0px 5px #ff0b72;
+}
+.App-header nav ul li a:active {
+  color: #fefab3;
+  text-shadow: 0px 0px 5px #fefab3;
+}
+
 main {
   background-color: transparent;
 }
 
 footer {
-  background-color: transparent;
+  background: linear-gradient(0deg, rgb(25, 0, 40) 0%, rgba(25, 0, 40, 0.2) 100%);
+}
+.presentation h1 {
+  font-family: "Passion One", sans-serif;
+  background: linear-gradient(180deg, rgb(0, 116, 255) 0%, rgb(111, 228, 255) 51%, rgb(167, 0, 104) 52%, rgb(255, 0, 206) 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.presentation .card {
+  border-radius: 10px;
+  background-color: rgba(25, 0, 40, 0.9);
+  color: #ff7686;
+  border-color: #ff7686;
+}
+
+.skills h1 {
+  z-index: 20;
+  font-family: "Passion One", sans-serif;
+}
+.skills p {
+  z-index: 20;
+}
+.skills .skills-grid-container .skill-card {
+  border-radius: 10px;
+  background-color: rgba(25, 0, 40, 0.9);
+  color: #ff7686;
+  border: 1px solid #ff7686;
+}
+.skills .skills-grid-container .skill-card p {
+  color: #ff7686;
+}
+.skills .skills-grid-container .skill-card i {
+  color: #ff7686;
+}
+.skills .skills-grid-container .one-line i {
+  color: #ff7686;
+}
+
+.projects .projects-container .carousel .project-card {
+  border-radius: 10px;
+  background-color: rgba(25, 0, 40, 0.9);
+  color: #ff7686;
+  border-color: #ff7686;
 }
 
 /*# sourceMappingURL=colors.css.map */

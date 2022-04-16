@@ -5,6 +5,9 @@ import Presentation from './Components/Presentation';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom'
 import Skills from './Components/Skills';
 import Projects from './Components/Projects';
+import Wave1 from './Ressources/wave1.svg';
+import Wave2 from './Ressources/wave2.svg';
+import Sun from './Ressources/Sun.png';
 
 function App() {
   return (
@@ -23,6 +26,12 @@ function App() {
         </header>
 
         <main>
+          <div className="bg">
+          <img src={Sun} className="sun"></img>
+          <img src={Wave2} className="wave2" width="1920" height="1080"></img>
+          <img src={Wave1} className="wave1" width="1920" height="1080"></img>
+          </div>
+
           <Routes>
             <Route path='/' exact element={<Presentation />} />
             <Route path='/skills' exact element={<Skills />} />

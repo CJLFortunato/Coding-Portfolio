@@ -1,19 +1,35 @@
 /*
-This file is for the display and organizing of elements
+This file is for the color scheme
 */
+
+$hot-pink: #ff0b72;
+$bright-yellow: #fefab3;
+$salmonPink: #ff7686;
+$cardBgClr: rgba(25,0,40,0.9);
+
+$titlefont: 'Passion One', sans-serif;
+
 * {
     
 }
 
 .App {
-    background-color: palevioletred;
+    background: rgb(131,58,180);
+    background: linear-gradient(180deg, rgba(11,0,40,1) 0%, rgba(37,9,84,1) 24%, rgba(93,16,122,1) 53%, rgba(184,37,115,1) 84%, rgba(255,138,117,1) 100%);
   }
   
   .App-header {
-    
+
+        background: linear-gradient(180deg, rgba(25,0,40,1) 0%,  rgba(25,0,40,0.2) 100%);
         background-color: transparent;
+
         h4 {
-            
+            font-family: $titlefont;
+            font-weight: 900;
+            background: linear-gradient(180deg, rgba(0,116,255,1) 0%, rgba(111,228,255,1) 51%, rgba(167,0,104,1) 52%, rgba(255,0,206,1) 100%);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 3rem;
             }
         
         nav {
@@ -26,8 +42,16 @@ This file is for the display and organizing of elements
                 li {
                     
                     a {
-                       
+                       color: $hot-pink;
+                       text-decoration: none;
                     }
+                    a:hover {
+                        text-shadow: 0px 0px 5px $hot-pink;
+                     }
+                     a:active {
+                        color: $bright-yellow;
+                        text-shadow: 0px 0px 5px $bright-yellow;
+                     }
                     
                 }
             }
@@ -41,7 +65,7 @@ main {
 
 footer {
     
-    background-color: transparent;
+    background: linear-gradient(0deg, rgba(25,0,40,1) 0%,  rgba(25,0,40,0.2) 100%);
     p {
         
     }
@@ -58,16 +82,18 @@ footer {
     
 
     h1 {
-       
-    }
-
-    .cards-ctn {
-        
+       font-family: $titlefont;
+       background: linear-gradient(180deg, rgba(0,116,255,1) 0%, rgba(111,228,255,1) 51%, rgba(167,0,104,1) 52%, rgba(255,0,206,1) 100%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 
     .card {
       
-
+        border-radius: 10px;
+        background-color: $cardBgClr;
+        color: $salmonPink;
+        border-color: $salmonPink;
     }
 }
 
@@ -77,23 +103,33 @@ footer {
 
   .skills {
 
-   
+    h1 {
+        z-index: 20;
+        font-family: $titlefont;
+    }
+
+    p {
+        z-index: 20;
+    }
 
     .skills-grid-container {
         
 
         .skill-card {
-        
+            border-radius: 10px;
+            background-color: $cardBgClr;
+            color: $salmonPink;
+            border: 1px solid $salmonPink;
       }
       .skill-card p {
-        
+        color: $salmonPink;
       }
       .skill-card i {
-        
+        color: $salmonPink;
         
       }
       .one-line i{
-       
+        color: $salmonPink;
       }
       }
 
@@ -126,6 +162,11 @@ footer {
             }
     
             .project-card {
+
+                border-radius: 10px;
+                background-color: $cardBgClr;
+                color: $salmonPink;
+                border-color: $salmonPink;
                 
 
                 img {
