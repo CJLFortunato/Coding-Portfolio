@@ -22,14 +22,15 @@ This file is for the display and organizing of elements
     color: white;
 
         h4 {
-            margin : 0 2%;
+            margin : 0 5%;
             justify-self: flex-start;
             }
         
         nav {
-            border: 1px solid green;
-            width: 30%;
+            // border: 1px solid green;
+            width: 40%;
             justify-self: center;
+            margin : 0 6%;
             
             ul {
                 display: flex;
@@ -40,7 +41,11 @@ This file is for the display and organizing of elements
 
                 li {
                     list-style-type: none;
-                    border: 1px solid greenyellow;
+                    // border: 1px solid greenyellow;
+                    a {
+                      color: white;  
+                    }
+                    
                 }
             }
         }
@@ -74,23 +79,143 @@ footer {
     h1 {
         font-size: 8rem;
         margin: 2rem 0;
+        // border: 1px solid green;
     }
 
     .cards-ctn {
         display: flex;
         flex-direction: row;
-        border: 1px solid black;
+        // border: 1px solid black;
         width: 90%;
         
-        justify-content: center;
+        justify-content: space-evenly;
     }
 
     .card {
         border: 1px solid black;
         margin: 1rem;
-        padding: 10px;
+        padding: 15px;
         width: 20%;
-        height: 20rem;
+        height: 30rem;
 
     }
 }
+
+  //====================================================================================================================================================
+  // Skills component
+  //====================================================================================================================================================
+
+  .skills {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .skills-grid-container {
+        display: grid;
+        grid-template-columns: 150px 150px 150px 150px 150px;
+        grid-auto-rows: 130px;
+        gap: 15px;
+        border: 1px solid rebeccapurple;
+        /* justify-self: flex-end; */
+        margin-top: 2rem;
+
+        .skill-card {
+        width: 150px;
+        height: 130px;
+        background-color: white;
+        // box-shadow: 7px 7px 0px hsla(0, 0%, 0%, 0.2);
+         border: 1px dashed purple; 
+      }
+      .skill-card p {
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight: bold;
+        line-height: initial;
+        width: 100%;
+      }
+      .skill-card i {
+        color: black;
+        font-size: 2.5rem;
+        
+      }
+      .one-line i{
+        margin-bottom: 1rem;
+      }
+      }
+
+    
+  }
+
+    //====================================================================================================================================================
+  // Projects component
+  //====================================================================================================================================================
+
+  .projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 1px solid aqua;
+    height: 100%;
+
+    h1{
+        margin: .5rem;
+        
+    }
+
+    .projects-container  {
+       
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        border: 1px solid green;
+        width: 68%;
+
+        // Carousel --------------------------------------------------------------
+
+        .carousel {
+            overflow: hidden;
+            border: 1px solid red;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+            width: 90%;
+
+            .inner {
+                white-space: nowrap;
+                transition: transform 0.3s ;
+                border: 1px solid blue;
+                display: flex;
+                flex-direction: row;
+            }
+    
+            .project-card {
+                display: inline-flex;
+                width: 22rem;
+                margin: 1rem;
+                border: 1px solid aqua;
+                padding: 15px;
+                height: 40rem;
+                white-space: normal;
+            }
+    
+        }
+
+        button {
+
+            i {
+                font-size: 4rem;
+            }
+        }
+      
+    }
+    
+
+    
+    
+  }
+
+  
