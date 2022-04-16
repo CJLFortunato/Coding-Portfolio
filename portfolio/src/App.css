@@ -1,0 +1,35 @@
+.App {
+  width: 100vw;
+  height: 100vh;
+  background-color: lightpink;
+  display: flex;
+  flex-direction: column;
+}
+
+.App-header {
+  justify-self: flex-start;
+  background-color: #282c34;
+  height: 4rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-header h4 {
+  margin : 0 2%;
+  justify-self: flex-start;
+}
+
+footer {
+  justify-self: flex-end;
+  background-color: #282c34;
+  height: 4rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+}
+
+
