@@ -25,17 +25,31 @@ This file is for the display and organizing of elements
             margin : 0 2%;
             justify-self: flex-start;
             }
+        
+        nav {
+            border: 1px solid green;
+            width: 30%;
+            justify-self: center;
+            
+            ul {
+                display: flex;
+                flex-direction: row;
+                align-items: center; 
+                justify-content: space-evenly;
+                padding: 0;
+
+                li {
+                    list-style-type: none;
+                    border: 1px solid greenyellow;
+                }
+            }
+        }
 
   }
     
 main {
-    background-color: deeppink;
-
-    p {
-        color: white;
-        font-size: 48pt;
-        border: 3px ridge dodgerblue;
-    }
+    background-color: whitesmoke;
+    height: 90vh;
 }
 
 footer {
