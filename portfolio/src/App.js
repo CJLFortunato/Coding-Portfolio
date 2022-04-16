@@ -1,5 +1,7 @@
 
 import './App.css';
+import Presentation from './Components/Presentation';
+import './CSS/structure.css';
 
 function App() {
   return (
@@ -13,9 +15,9 @@ function App() {
         </nav>
       </header>
       <main>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-        Quas quidem, praesentium veniam at adipisci neque, rem rerum quam totam ad nulla accusamus velit, 
-        officia vitae repudiandae vero odio ut? Dolorem!
+        <Presentation />
+        
+        
       </main>
       <footer>
         <p>Made by Clémence Fortunato.
