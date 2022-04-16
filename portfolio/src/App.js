@@ -1,5 +1,6 @@
 import './App.css';
 import './CSS/structure.css';
+import './CSS/colors.css';
 import Presentation from './Components/Presentation';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom'
 import Skills from './Components/Skills';
@@ -30,11 +31,10 @@ function App() {
         </main>
 
         <footer>
-          <p>Made by Clémence Fortunato.
-            <a href="">clemence.fortunato@gmail.com</a>
-            <a href="">GitHub</a>
-            <a href="">LinkedIn</a>
-          </p>
+          <p> Contactez moi!</p>
+          <a href="mailto:clemence.fortunato@gmail.com">clemence.fortunato@gmail.com</a>
+          <a href="https://github.com/CJLFortunato/">GitHub</a>
+          <a href="https://www.linkedin.com/in/clemencefortunato/">LinkedIn</a>
         </footer>
 
       </div>
