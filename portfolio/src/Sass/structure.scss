@@ -98,12 +98,13 @@ footer {
     flex-direction: row;
     align-items: center;
     color: white;
-    justify-content: flex-start;
+    justify-content: space-evenly;
     z-index: 20;
     p {
         margin: 0 2%;
         // border: 1px solid rebeccapurple;
-        font-size: 1.8rem;
+        font-size: 2.5rem;
+       
     }
     a {
         margin: 0 3%;
@@ -158,6 +159,10 @@ footer {
     flex-direction: column;
     align-items: center;
     z-index: 20;
+
+    h1 {
+        font-size: 5rem;
+    }
 
     .cards-ctn {
         
@@ -240,6 +245,7 @@ footer {
     h1{
         margin: .5rem;
         z-index: 20;
+        font-size: 5rem;
         
     }
 

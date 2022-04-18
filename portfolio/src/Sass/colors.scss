@@ -10,7 +10,7 @@ $hot-pink: #ff0b72;
 $bright-yellow: #fefab3;
 $salmonPink: #ff7686;
 $cardBgClr: rgba(25, 0, 40, 0.9);
-$skyblue: #48c1ff; 
+$skyblue: #0b9bff; 
 $softOrange: #ff7f6a;
 
 $titlefont: 'VCR OSD Mono',
@@ -48,11 +48,11 @@ sans-serif;
   h4 {
     font-family: $titlefont;
     font-weight: 900;
-    background: linear-gradient(180deg, rgba(0, 116, 255, 1) 0%, rgba(111, 228, 255, 1) 48%, rgba(255, 255, 255, 1) 50%, rgba(167, 0, 104, 1) 52%, rgba(255, 0, 206, 1) 100%);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: white;
+    text-shadow: 2px 1px 0px $hot-pink, -2px -1px 0px $skyblue;
     font-size: 3rem;
     letter-spacing: -3px;
+    transform: skew(-10deg);
   }
 
   nav {
@@ -62,17 +62,18 @@ sans-serif;
       li {
 
         a {
-          color: $hot-pink;
           text-decoration: none;
+          padding: 7px;
+          font-family: $titlefont;
+          color: white;
+          text-shadow: 2px 1px 0px $hot-pink, -2px -1px 0px $skyblue;
+          border-radius: 0;
         }
-
-        a:hover {
-          text-shadow: 0px 0px 5px $hot-pink;
+        a:hover{
+          text-shadow: 6px 3px 4px $hot-pink, -6px -3px 4px $skyblue;
         }
-
         a:active {
-          color: $bright-yellow;
-          text-shadow: 0px 0px 5px $bright-yellow;
+          text-shadow: 6px 3px 4px $skyblue, -6px -3px 4px $hot-pink;
         }
 
       }
@@ -88,14 +89,28 @@ main {
 footer {
 
   background: linear-gradient(0deg, rgba(25, 0, 40, 1) 0%, rgba(25, 0, 40, 0.2) 100%);
+  
 
-  p {}
+  p {
+
+    font-family: $titlefont;
+    color: white;
+    text-shadow: 2px 1px 0px $hot-pink, -2px -1px 0px $skyblue;
+  }
 
   a {
     text-decoration: none;
-    padding: 5px;
-    
-    @include button($softOrange, transparent, transparent);
+    padding: 7px;
+    font-family: $titlefont;
+    color: white;
+    text-shadow: 2px 1px 0px $hot-pink, -2px -1px 0px $skyblue;
+    border-radius: 0;
+  }
+  a:hover{
+    text-shadow: 6px 3px 4px $hot-pink, -6px -3px 4px $skyblue;
+  }
+  a:active {
+    text-shadow: 6px 3px 4px $skyblue, -6px -3px 4px $hot-pink;
   }
 }
 
@@ -108,10 +123,12 @@ footer {
 
   h1 {
     font-family: $titlefont;
-    background: linear-gradient(180deg, rgba(0, 116, 255, 1) 0%, rgba(111, 228, 255, 1) 48%, rgba(255, 255, 255, 1) 50%, rgba(167, 0, 104, 1) 52%, rgba(255, 0, 206, 1) 100%);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    letter-spacing: -4px;
+    color: white;
+    text-shadow: 5px 3px 0px $hot-pink, -5px -3px 0px $skyblue;
+    background-color: rgba(25, 0, 40, 1);
+    width: 70%;
+    text-align: center;
+    transform: skew(-10deg);
     
   }
 
@@ -128,8 +145,13 @@ footer {
 .skills {
 
   h1 {
-    z-index: 20;
     font-family: $titlefont;
+    color: white;
+    text-shadow: 5px 3px 0px $hot-pink, -5px -3px 0px $skyblue;
+    background-color: rgba(25, 0, 40, 1);
+    width: 70%;
+    text-align: center;
+    transform: skew(-10deg);
     
   }
 
@@ -177,8 +199,13 @@ footer {
 
 
   h1 {
-    font-size: 4rem;
     font-family: $titlefont;
+    color: white;
+    text-shadow: 5px 3px 0px $hot-pink, -5px -3px 0px $skyblue;
+    background-color: rgba(25, 0, 40, 1);
+    width: 70%;
+    text-align: center;
+    transform: skew(-10deg);
   }
 
   .projects-container {

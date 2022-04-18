@@ -18,9 +18,9 @@ function App() {
           <h4>Clémence Fortunato</h4>
           <nav>
             <ul>
-              <li><Link to="/">Home</Link></li>
-              <li><Link to="/skills">Skills</Link></li>
-              <li><Link to="/projects">Projects</Link></li>
+              <li><Link to="/">Accueil</Link></li>
+              <li><Link to="/skills">Compétences</Link></li>
+              <li><Link to="/projects">Projets</Link></li>
             </ul>
           </nav>
         </header>
