@@ -1,6 +1,10 @@
 /*
-This file is for the color scheme
+This file is for the color scheme and purely aesthetic elements
 */
+@font-face {
+  font-family: "VCR OSD Mono";
+  src: url("../Ressources/VCR_OSD_MONO_1.001.ttf");
+}
 .App {
   background: rgb(131, 58, 180);
   background: linear-gradient(180deg, rgb(11, 0, 40) 0%, rgb(37, 9, 84) 24%, rgb(93, 16, 122) 53%, rgb(184, 37, 115) 84%, rgb(255, 138, 117) 100%);
@@ -11,12 +15,13 @@ This file is for the color scheme
   background-color: transparent;
 }
 .App-header h4 {
-  font-family: "Passion One", sans-serif;
+  font-family: "VCR OSD Mono", sans-serif;
   font-weight: 900;
-  background: linear-gradient(180deg, rgb(0, 116, 255) 0%, rgb(111, 228, 255) 51%, rgb(167, 0, 104) 52%, rgb(255, 0, 206) 100%);
+  background: linear-gradient(180deg, rgb(0, 116, 255) 0%, rgb(111, 228, 255) 48%, rgb(255, 255, 255) 50%, rgb(167, 0, 104) 52%, rgb(255, 0, 206) 100%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 3rem;
+  letter-spacing: -3px;
 }
 .App-header nav ul li a {
   color: #ff0b72;
@@ -49,10 +54,11 @@ footer a {
 }
 
 .presentation h1 {
-  font-family: "Passion One", sans-serif;
-  background: linear-gradient(180deg, rgb(0, 116, 255) 0%, rgb(111, 228, 255) 51%, rgb(167, 0, 104) 52%, rgb(255, 0, 206) 100%);
+  font-family: "VCR OSD Mono", sans-serif;
+  background: linear-gradient(180deg, rgb(0, 116, 255) 0%, rgb(111, 228, 255) 48%, rgb(255, 255, 255) 50%, rgb(167, 0, 104) 52%, rgb(255, 0, 206) 100%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  letter-spacing: -4px;
 }
 .presentation .card {
   border-radius: 10px;
@@ -65,7 +71,7 @@ footer a {
 
 .skills h1 {
   z-index: 20;
-  font-family: "Passion One", sans-serif;
+  font-family: "VCR OSD Mono", sans-serif;
 }
 .skills p {
   z-index: 20;
@@ -97,7 +103,7 @@ footer a {
 
 .projects h1 {
   font-size: 4rem;
-  font-family: "Passion One", sans-serif;
+  font-family: "VCR OSD Mono", sans-serif;
 }
 .projects .projects-container .carousel .project-card {
   border-radius: 10px;

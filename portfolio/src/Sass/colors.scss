@@ -1,6 +1,10 @@
 /*
-This file is for the color scheme
+This file is for the color scheme and purely aesthetic elements
 */
+@font-face {
+  font-family: 'VCR OSD Mono';
+  src: url('../Ressources/VCR_OSD_MONO_1.001.ttf');
+}
 
 $hot-pink: #ff0b72;
 $bright-yellow: #fefab3;
@@ -9,7 +13,7 @@ $cardBgClr: rgba(25, 0, 40, 0.9);
 $skyblue: #48c1ff; 
 $softOrange: #ff7f6a;
 
-$titlefont: 'Passion One',
+$titlefont: 'VCR OSD Mono',
 sans-serif;
 
 @mixin cards() {
@@ -31,8 +35,6 @@ sans-serif;
   background-color: $bgColor;
 }
 
-* {}
-
 .App {
   background: rgb(131, 58, 180);
   background: linear-gradient(180deg, rgba(11, 0, 40, 1) 0%, rgba(37, 9, 84, 1) 24%, rgba(93, 16, 122, 1) 53%, rgba(184, 37, 115, 1) 84%, rgba(255, 138, 117, 1) 100%);
@@ -46,16 +48,14 @@ sans-serif;
   h4 {
     font-family: $titlefont;
     font-weight: 900;
-    background: linear-gradient(180deg, rgba(0, 116, 255, 1) 0%, rgba(111, 228, 255, 1) 51%, rgba(167, 0, 104, 1) 52%, rgba(255, 0, 206, 1) 100%);
+    background: linear-gradient(180deg, rgba(0, 116, 255, 1) 0%, rgba(111, 228, 255, 1) 48%, rgba(255, 255, 255, 1) 50%, rgba(167, 0, 104, 1) 52%, rgba(255, 0, 206, 1) 100%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 3rem;
+    letter-spacing: -3px;
   }
 
   nav {
-
-
-
     ul {
 
 
@@ -108,9 +108,11 @@ footer {
 
   h1 {
     font-family: $titlefont;
-    background: linear-gradient(180deg, rgba(0, 116, 255, 1) 0%, rgba(111, 228, 255, 1) 51%, rgba(167, 0, 104, 1) 52%, rgba(255, 0, 206, 1) 100%);
+    background: linear-gradient(180deg, rgba(0, 116, 255, 1) 0%, rgba(111, 228, 255, 1) 48%, rgba(255, 255, 255, 1) 50%, rgba(167, 0, 104, 1) 52%, rgba(255, 0, 206, 1) 100%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    letter-spacing: -4px;
+    
   }
 
   .card {
@@ -128,6 +130,7 @@ footer {
   h1 {
     z-index: 20;
     font-family: $titlefont;
+    
   }
 
   p {
