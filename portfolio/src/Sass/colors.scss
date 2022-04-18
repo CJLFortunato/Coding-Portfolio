@@ -5,189 +5,226 @@ This file is for the color scheme
 $hot-pink: #ff0b72;
 $bright-yellow: #fefab3;
 $salmonPink: #ff7686;
-$cardBgClr: rgba(25,0,40,0.9);
+$cardBgClr: rgba(25, 0, 40, 0.9);
+$skyblue: #48c1ff; 
+$softOrange: #ff7f6a;
 
-$titlefont: 'Passion One', sans-serif;
+$titlefont: 'Passion One',
+sans-serif;
 
-* {
-    
+@mixin cards() {
+
+  border-radius: 10px;
+  background: repeating-linear-gradient(180deg, transparent, transparent 15px, rgba(25, 0, 40, 1) 15px, rgba(25, 0, 40, 1) 16px, transparent 16px),
+    repeating-linear-gradient(90deg, transparent, transparent 15px, rgba(25, 0, 40, 1) 15px, rgba(25, 0, 40, 1) 16px, transparent 16px);
+  background-color: $cardBgClr;
+  color: $salmonPink;
+  border-color: $salmonPink;
+  box-shadow: 0 0 5px 2px rgba(255, 11, 114, .5);
+}
+@mixin button($color, $bgColor, $shadowColor) {
+  color: $color;
+  border: 1px solid $color;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 2px $shadowColor;
+  text-shadow: 0px 0px 5px $shadowColor;
+  background-color: $bgColor;
 }
 
+* {}
+
 .App {
-    background: rgb(131,58,180);
-    background: linear-gradient(180deg, rgba(11,0,40,1) 0%, rgba(37,9,84,1) 24%, rgba(93,16,122,1) 53%, rgba(184,37,115,1) 84%, rgba(255,138,117,1) 100%);
+  background: rgb(131, 58, 180);
+  background: linear-gradient(180deg, rgba(11, 0, 40, 1) 0%, rgba(37, 9, 84, 1) 24%, rgba(93, 16, 122, 1) 53%, rgba(184, 37, 115, 1) 84%, rgba(255, 138, 117, 1) 100%);
+}
+
+.App-header {
+
+  background: linear-gradient(180deg, rgba(25, 0, 40, 1) 0%, rgba(25, 0, 40, 0.2) 100%);
+  background-color: transparent;
+
+  h4 {
+    font-family: $titlefont;
+    font-weight: 900;
+    background: linear-gradient(180deg, rgba(0, 116, 255, 1) 0%, rgba(111, 228, 255, 1) 51%, rgba(167, 0, 104, 1) 52%, rgba(255, 0, 206, 1) 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3rem;
   }
-  
-  .App-header {
 
-        background: linear-gradient(180deg, rgba(25,0,40,1) 0%,  rgba(25,0,40,0.2) 100%);
-        background-color: transparent;
+  nav {
 
-        h4 {
-            font-family: $titlefont;
-            font-weight: 900;
-            background: linear-gradient(180deg, rgba(0,116,255,1) 0%, rgba(111,228,255,1) 51%, rgba(167,0,104,1) 52%, rgba(255,0,206,1) 100%);
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-            font-size: 3rem;
-            }
-        
-        nav {
-            
-            
-            
-            ul {
-                
 
-                li {
-                    
-                    a {
-                       color: $hot-pink;
-                       text-decoration: none;
-                    }
-                    a:hover {
-                        text-shadow: 0px 0px 5px $hot-pink;
-                     }
-                     a:active {
-                        color: $bright-yellow;
-                        text-shadow: 0px 0px 5px $bright-yellow;
-                     }
-                    
-                }
-            }
+
+    ul {
+
+
+      li {
+
+        a {
+          color: $hot-pink;
+          text-decoration: none;
         }
 
+        a:hover {
+          text-shadow: 0px 0px 5px $hot-pink;
+        }
+
+        a:active {
+          color: $bright-yellow;
+          text-shadow: 0px 0px 5px $bright-yellow;
+        }
+
+      }
+    }
   }
-    
+
+}
+
 main {
-    background-color: transparent;
+  background-color: transparent;
 }
 
 footer {
+
+  background: linear-gradient(0deg, rgba(25, 0, 40, 1) 0%, rgba(25, 0, 40, 0.2) 100%);
+
+  p {}
+
+  a {
+    text-decoration: none;
+    padding: 5px;
     
-    background: linear-gradient(0deg, rgba(25,0,40,1) 0%,  rgba(25,0,40,0.2) 100%);
-    p {
-        
-    }
-    a {
-      
-    }
+    @include button($softOrange, transparent, transparent);
   }
-
-  //====================================================================================================================================================
-  // Presentation component
-  //====================================================================================================================================================
-
-.presentation {
-    
-
-    h1 {
-       font-family: $titlefont;
-       background: linear-gradient(180deg, rgba(0,116,255,1) 0%, rgba(111,228,255,1) 51%, rgba(167,0,104,1) 52%, rgba(255,0,206,1) 100%);
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-
-    .card {
-      
-        border-radius: 10px;
-        background-color: $cardBgClr;
-        color: $salmonPink;
-        border-color: $salmonPink;
-    }
 }
 
-  //====================================================================================================================================================
-  // Skills component
-  //====================================================================================================================================================
+//====================================================================================================================================================
+// Presentation component
+//====================================================================================================================================================
 
-  .skills {
+.presentation {
 
-    h1 {
-        z-index: 20;
-        font-family: $titlefont;
-    }
 
-    p {
-        z-index: 20;
-    }
-
-    .skills-grid-container {
-        
-
-        .skill-card {
-            border-radius: 10px;
-            background-color: $cardBgClr;
-            color: $salmonPink;
-            border: 1px solid $salmonPink;
-      }
-      .skill-card p {
-        color: $salmonPink;
-      }
-      .skill-card i {
-        color: $salmonPink;
-        
-      }
-      .one-line i{
-        color: $salmonPink;
-      }
-      }
-
-    
+  h1 {
+    font-family: $titlefont;
+    background: linear-gradient(180deg, rgba(0, 116, 255, 1) 0%, rgba(111, 228, 255, 1) 51%, rgba(167, 0, 104, 1) 52%, rgba(255, 0, 206, 1) 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
-    //====================================================================================================================================================
-  // Projects component
-  //====================================================================================================================================================
+  .card {
 
-  .projects {
-   
+    @include cards;
+  }
+}
 
-    h1{
-        
-        
+//====================================================================================================================================================
+// Skills component
+//====================================================================================================================================================
+
+.skills {
+
+  h1 {
+    z-index: 20;
+    font-family: $titlefont;
+  }
+
+  p {
+    z-index: 20;
+  }
+
+  h3 {
+    color: $skyblue;
+    font-size: 1.5rem;
+
+  }
+
+  .skills-card-ctn {
+    @include cards;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skills-grid-container {
+
+    .skill-card {
+      background-color: transparent;
     }
 
-    .projects-container  {
-       
-        
+    .skill-card p {
+      color: $salmonPink;
+    }
 
-        // Carousel --------------------------------------------------------------
+    .skill-card i {
+      color: $salmonPink;
 
-        .carousel {
-            
+    }
+  }
 
-            .inner {
-                
-            }
-    
-            .project-card {
 
-                border-radius: 10px;
-                background-color: $cardBgClr;
-                color: $salmonPink;
-                border-color: $salmonPink;
-                
+}
 
-                img {
-                    
-                }
-            }
-    
-        }
+//====================================================================================================================================================
+// Projects component
+//====================================================================================================================================================
 
-        button {
+.projects {
 
-            i {
-                
-            }
-        }
+
+  h1 {
+    font-size: 4rem;
+    font-family: $titlefont;
+  }
+
+  .projects-container {
+
+    // Carousel --------------------------------------------------------------
+
+    .carousel {
+
+      .project-card {
+
+        @include cards;
+      }
+
+    }
+
+    a {
+      text-decoration: none;
+      padding: 5px;
       
+      @include button($hot-pink, transparent, transparent);
     }
-    
+    a:hover {
+      
+      @include button($hot-pink, #ff0b7130, $hot-pink);
+    }
+    a:active {
+      
+      @include button($bright-yellow, #fefab330, $bright-yellow);
+    }
 
-    
-    
+    button {
+
+      @include button($salmonPink, transparent, transparent);
+
+
+    }
+    button:hover {
+
+      @include button($salmonPink, #ff768630, $salmonPink);
+
+
+    }
+    button:active {
+
+      @include button($bright-yellow, #fefab330, $bright-yellow);
+
+
+    }
+
   }
 
-  
+}

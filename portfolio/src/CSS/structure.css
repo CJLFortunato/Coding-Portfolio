@@ -133,35 +133,49 @@ footer a {
   align-items: center;
   z-index: 20;
 }
-.skills .skills-grid-container {
+.skills .cards-ctn {
+  z-index: 10;
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  z-index: 20;
+  justify-content: space-evenly;
+}
+.skills .cards-ctn .skills-card-ctn {
+  border: 1px solid black;
+  margin: 1rem;
+  padding: 15px;
+  width: 20%;
+  height: 30rem;
+  z-index: 20;
+}
+.skills .cards-ctn .skills-card-ctn .skills-grid-container {
   display: grid;
-  grid-template-columns: 150px 150px 150px 150px 150px;
-  grid-auto-rows: 130px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: 100px;
   gap: 15px;
-  /* justify-self: flex-end; */
   margin-top: 2rem;
   z-index: 20;
 }
-.skills .skills-grid-container .skill-card {
-  width: 150px;
-  height: 130px;
-  background-color: white;
+.skills .cards-ctn .skills-card-ctn .skills-grid-container .skill-card {
+  width: 100px;
+  height: 100px;
   z-index: 20;
 }
-.skills .skills-grid-container .skill-card p {
+.skills .cards-ctn .skills-card-ctn .skills-grid-container .skill-card p {
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: bold;
   line-height: initial;
   width: 100%;
   z-index: 20;
+  margin-bottom: 0;
 }
-.skills .skills-grid-container .skill-card i {
-  color: black;
+.skills .cards-ctn .skills-card-ctn .skills-grid-container .skill-card i {
   font-size: 2.5rem;
   z-index: 20;
 }
-.skills .skills-grid-container .one-line i {
+.skills .cards-ctn .skills-card-ctn .skills-grid-container .one-line i {
   margin-bottom: 1rem;
   z-index: 20;
 }
@@ -192,7 +206,7 @@ footer a {
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  width: 90%;
+  width: 88%;
   z-index: 20;
 }
 .projects .projects-container .carousel .inner {
@@ -209,14 +223,37 @@ footer a {
   margin: 1rem;
   border: 1px solid aqua;
   padding: 15px;
-  height: 40rem;
+  height: 35rem;
   white-space: normal;
   z-index: 20;
+  align-items: center;
 }
 .projects .projects-container .carousel .project-card img {
   width: 100%;
   height: 150px;
   z-index: 20;
+}
+.projects .projects-container .carousel .project-card .project-card-img-p-ctn {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-items: flex-start;
+  align-items: flex-start;
+  height: 65%;
+}
+.projects .projects-container .carousel .project-card h3 {
+  align-self: center;
+}
+.projects .projects-container .carousel .project-card h4 {
+  margin: 1%;
+}
+.projects .projects-container .carousel .project-card .link-ctn {
+  justify-self: flex-end;
+  display: flex;
+  flex-flow: row nowrap;
+  margin: 0;
+  width: 100%;
+  justify-content: space-between;
+  font-size: 1.2rem;
 }
 .projects .projects-container button i {
   font-size: 4rem;

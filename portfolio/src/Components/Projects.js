@@ -8,9 +8,9 @@ function Projects( { children }) {
         const nbCards = document.getElementsByClassName("project-card").length;
         console.log(nbCards);
         if (newIndex < 0) {
-            newIndex = 0
-        } else if (newIndex >= nbCards) {
             newIndex = nbCards -1;
+        } else if (newIndex >= nbCards) {
+            newIndex = 0;
         }
 
         setActiveIndex(newIndex);
@@ -35,12 +35,11 @@ function Projects( { children }) {
                                     <li>React 18</li>
                                     <li>Sass 1.49</li>
                                 </ul>
-                                <div className="link-ctn">
+                            </div>
+                            <div className="link-ctn">
                                     <a href="" className="deployed">Vous voyez le résultat!</a>
                                     <a href="https://github.com/CJLFortunato/Coding-Portfolio" target="_blank" className="github">GitHub</a>
                                 </div>
-
-                            </div>
                         </div>
 
                         <div className="project-card">
@@ -55,12 +54,13 @@ function Projects( { children }) {
                                         <li>CSS 3</li>
                                         <li>JavaScript ES6</li>
                                     </ul>
-                                <div className="link-ctn">
+                                
+
+                            </div>
+                            <div className="link-ctn">
                                     <a href="https://cjlfortunato.github.io/Dice-roller/" target="_blank" className="deployed">Voir site</a>
                                     <a href="https://github.com/CJLFortunato/Dice-roller" target="_blank" className="github">GitHub</a>
                                 </div>
-
-                            </div>
                         </div>
 
                         <div className="project-card">
@@ -76,12 +76,13 @@ function Projects( { children }) {
                                         <li>API Spotify</li>
                                     </ul>
 
-                                <div className="link-ctn">
+                                
+
+                            </div>
+                            <div className="link-ctn">
                                     <a href=" http://react-jammming-music.surge.sh/" target="_blank" className="deployed">Voir site</a>
                                     <a href="https://github.com/CJLFortunato/Jammming" target="_blank" className="github">GitHub</a>
                                 </div>
-
-                            </div>
                         </div>
 
                         <div className="project-card">
@@ -95,11 +96,12 @@ function Projects( { children }) {
                                     <li>API OpenWeather </li>
                                 </ul>
 
-                                <div className="link-ctn">
+                                
+                            </div>
+                            <div className="link-ctn">
                                     <a href="https://goblin-market.netlify.app" target="_blank" className="deployed">Voir site</a>
                                     <a href="https://github.com/CJLFortunato/Goblin-Market" target="_blank" className="github">GitHub</a>
                                 </div>
-                            </div>
                         </div>
 
                         <div className="project-card">
@@ -113,11 +115,12 @@ function Projects( { children }) {
                                         <li>NodeJS/ExpressJS</li>
                                         <li>PostGreSQL</li>
                                     </ul>
-                                <div className="link-ctn">
+                                
+                            </div>
+                            <div className="link-ctn">
                                     <a href="https://goblin-market.netlify.app" target="_blank" className="deployed">Voir site</a>
                                     <a href="https://github.com/CJLFortunato/Goblin-Market" target="_blank" className="github">GitHub</a>
                                 </div>
-                            </div>
                         </div>
 
                     </div>

@@ -37,6 +37,17 @@ main {
 footer {
   background: linear-gradient(0deg, rgb(25, 0, 40) 0%, rgba(25, 0, 40, 0.2) 100%);
 }
+footer a {
+  text-decoration: none;
+  padding: 5px;
+  color: #ff7f6a;
+  border: 1px solid #ff7f6a;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 2px transparent;
+  text-shadow: 0px 0px 5px transparent;
+  background-color: transparent;
+}
+
 .presentation h1 {
   font-family: "Passion One", sans-serif;
   background: linear-gradient(180deg, rgb(0, 116, 255) 0%, rgb(111, 228, 255) 51%, rgb(167, 0, 104) 52%, rgb(255, 0, 206) 100%);
@@ -45,9 +56,11 @@ footer {
 }
 .presentation .card {
   border-radius: 10px;
+  background: repeating-linear-gradient(180deg, transparent, transparent 15px, rgb(25, 0, 40) 15px, rgb(25, 0, 40) 16px, transparent 16px), repeating-linear-gradient(90deg, transparent, transparent 15px, rgb(25, 0, 40) 15px, rgb(25, 0, 40) 16px, transparent 16px);
   background-color: rgba(25, 0, 40, 0.9);
   color: #ff7686;
   border-color: #ff7686;
+  box-shadow: 0 0 5px 2px rgba(255, 11, 114, 0.5);
 }
 
 .skills h1 {
@@ -57,11 +70,23 @@ footer {
 .skills p {
   z-index: 20;
 }
-.skills .skills-grid-container .skill-card {
+.skills h3 {
+  color: #48c1ff;
+  font-size: 1.5rem;
+}
+.skills .skills-card-ctn {
   border-radius: 10px;
+  background: repeating-linear-gradient(180deg, transparent, transparent 15px, rgb(25, 0, 40) 15px, rgb(25, 0, 40) 16px, transparent 16px), repeating-linear-gradient(90deg, transparent, transparent 15px, rgb(25, 0, 40) 15px, rgb(25, 0, 40) 16px, transparent 16px);
   background-color: rgba(25, 0, 40, 0.9);
   color: #ff7686;
-  border: 1px solid #ff7686;
+  border-color: #ff7686;
+  box-shadow: 0 0 5px 2px rgba(255, 11, 114, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.skills .skills-grid-container .skill-card {
+  background-color: transparent;
 }
 .skills .skills-grid-container .skill-card p {
   color: #ff7686;
@@ -69,15 +94,68 @@ footer {
 .skills .skills-grid-container .skill-card i {
   color: #ff7686;
 }
-.skills .skills-grid-container .one-line i {
-  color: #ff7686;
-}
 
+.projects h1 {
+  font-size: 4rem;
+  font-family: "Passion One", sans-serif;
+}
 .projects .projects-container .carousel .project-card {
   border-radius: 10px;
+  background: repeating-linear-gradient(180deg, transparent, transparent 15px, rgb(25, 0, 40) 15px, rgb(25, 0, 40) 16px, transparent 16px), repeating-linear-gradient(90deg, transparent, transparent 15px, rgb(25, 0, 40) 15px, rgb(25, 0, 40) 16px, transparent 16px);
   background-color: rgba(25, 0, 40, 0.9);
   color: #ff7686;
   border-color: #ff7686;
+  box-shadow: 0 0 5px 2px rgba(255, 11, 114, 0.5);
+}
+.projects .projects-container a {
+  text-decoration: none;
+  padding: 5px;
+  color: #ff0b72;
+  border: 1px solid #ff0b72;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 2px transparent;
+  text-shadow: 0px 0px 5px transparent;
+  background-color: transparent;
+}
+.projects .projects-container a:hover {
+  color: #ff0b72;
+  border: 1px solid #ff0b72;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 2px #ff0b72;
+  text-shadow: 0px 0px 5px #ff0b72;
+  background-color: rgba(255, 11, 113, 0.1882352941);
+}
+.projects .projects-container a:active {
+  color: #fefab3;
+  border: 1px solid #fefab3;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 2px #fefab3;
+  text-shadow: 0px 0px 5px #fefab3;
+  background-color: rgba(254, 250, 179, 0.1882352941);
+}
+.projects .projects-container button {
+  color: #ff7686;
+  border: 1px solid #ff7686;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 2px transparent;
+  text-shadow: 0px 0px 5px transparent;
+  background-color: transparent;
+}
+.projects .projects-container button:hover {
+  color: #ff7686;
+  border: 1px solid #ff7686;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 2px #ff7686;
+  text-shadow: 0px 0px 5px #ff7686;
+  background-color: rgba(255, 118, 134, 0.1882352941);
+}
+.projects .projects-container button:active {
+  color: #fefab3;
+  border: 1px solid #fefab3;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 2px #fefab3;
+  text-shadow: 0px 0px 5px #fefab3;
+  background-color: rgba(254, 250, 179, 0.1882352941);
 }
 
 /*# sourceMappingURL=colors.css.map */
