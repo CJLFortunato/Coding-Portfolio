@@ -100,6 +100,11 @@ footer a {
   font-size: 1.8rem;
 }
 
+h3 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
 .presentation {
   display: flex;
   flex-direction: column;
@@ -121,10 +126,35 @@ footer a {
 .presentation .card {
   border: 1px solid black;
   margin: 1rem;
-  padding: 15px;
+  padding: 10px 15px;
   width: 20%;
-  height: 30rem;
+  height: 32rem;
   z-index: 20;
+}
+.presentation .card h3 {
+  margin: 5px 0;
+}
+.presentation .card ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.presentation .card ul li {
+  font-weight: bold;
+  margin-top: 10px;
+}
+.presentation .card ul li ul {
+  margin-left: 10px;
+}
+.presentation .card ul li ul li {
+  font-weight: normal;
+  margin-top: 0px;
+}
+.presentation .card p {
+  margin: 2px 0;
+  font-style: italic;
+  font-size: 0.9rem;
+  font-weight: normal;
 }
 
 .skills {

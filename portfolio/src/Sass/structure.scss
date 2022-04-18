@@ -113,6 +113,11 @@ footer {
     }
   }
 
+  h3 {
+      font-size: 1.5rem;
+      margin: 0;
+  }
+
   //====================================================================================================================================================
   // Presentation component
   //====================================================================================================================================================
@@ -142,10 +147,40 @@ footer {
     .card {
         border: 1px solid black;
         margin: 1rem;
-        padding: 15px;
+        padding: 10px 15px;
         width: 20%;
-        height: 30rem;
+        height: 32rem;
         z-index: 20;
+
+        h3 {
+            margin : 5px 0;
+        }
+
+        ul {
+           list-style-type: none; 
+           margin : 0;
+           padding: 0;
+
+           li {
+               font-weight: bold;
+               margin-top: 10px;
+               ul {
+                   margin-left: 10px;
+                   
+                   li {
+                     font-weight: normal;  
+                     margin-top: 0px;
+                   }
+               }
+           }
+        }
+        p {
+            margin : 2px 0;
+            font-style: italic;
+            font-size: .9rem;
+            font-weight: normal;
+        }
+        
     }
 }
 

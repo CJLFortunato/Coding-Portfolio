@@ -67,7 +67,6 @@ sans-serif;
           font-family: $titlefont;
           color: white;
           text-shadow: 2px 1px 0px $hot-pink, -2px -1px 0px $skyblue;
-          border-radius: 0;
         }
         a:hover{
           text-shadow: 6px 3px 4px $hot-pink, -6px -3px 4px $skyblue;
@@ -113,6 +112,21 @@ footer {
     text-shadow: 6px 3px 4px $skyblue, -6px -3px 4px $hot-pink;
   }
 }
+h3 {
+  color: white;
+  text-shadow: 1px 0px 0px $hot-pink, -1px 0px 0px $skyblue;
+}
+
+h1 {
+  font-family: $titlefont;
+  color: white;
+  text-shadow: 5px 3px 0px $hot-pink, -5px -3px 0px $skyblue;
+  background-color: rgba(25, 0, 40, 1);
+  width: 70%;
+  text-align: center;
+  transform: skew(-10deg);
+  
+}
 
 //====================================================================================================================================================
 // Presentation component
@@ -120,21 +134,57 @@ footer {
 
 .presentation {
 
-
-  h1 {
-    font-family: $titlefont;
-    color: white;
-    text-shadow: 5px 3px 0px $hot-pink, -5px -3px 0px $skyblue;
-    background-color: rgba(25, 0, 40, 1);
-    width: 70%;
-    text-align: center;
-    transform: skew(-10deg);
-    
-  }
-
   .card {
 
     @include cards;
+
+  
+  ul {
+      color: $softOrange;
+      a {
+        color: $softOrange;
+        text-decoration: underline 1px dashed $softOrange;
+      }
+      a:hover {
+        color: $bright-yellow;
+        text-decoration: underline 1px solid $bright-yellow;
+      }
+
+     li {
+        
+         ul {
+           
+             
+             li {
+              color: $salmonPink;
+             }
+         }
+     }
+  }
+
+  #link{
+    display: inline-block;
+    margin: 1rem 0;
+    text-decoration: none;
+    @include button($hot-pink, transparent, transparent);
+    padding: 5px;
+  }
+  #link:hover {
+      
+    @include button($hot-pink, #ff0b7130, $hot-pink);
+  }
+  #link:active {
+    
+    @include button($bright-yellow, #fefab330, $bright-yellow);
+  }
+
+  p {
+    color: $salmonPink;
+  }
+  
+  }
+  strong {
+    color: $softOrange;
   }
 }
 
@@ -160,8 +210,11 @@ footer {
   }
 
   h3 {
-    color: $skyblue;
-    font-size: 1.5rem;
+   
+    margin : 5px 0;
+    color: white;
+    text-shadow: 1px 0px 0px $hot-pink, -1px 0px 0px $skyblue;
+
 
   }
 
