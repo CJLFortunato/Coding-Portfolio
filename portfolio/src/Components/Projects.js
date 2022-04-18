@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import ImgPortfolio from '../Ressources/project_portfolio.jpg';
-//import ImgDatabase from '../Ressources/project_portfolio.jpg';
+import ImgDatabase from '../Ressources/project_database.jpg';
 import ImgWeather from '../Ressources/project_weather.jpg';
 import ImgJammming from '../Ressources/project_jammming.jpg';
 import ImgDice from '../Ressources/project_dice.jpg';
@@ -51,7 +51,7 @@ function Projects( { children }) {
                         </div>
 
                         <div className="project-card">
-                            <img src="./Ressources/project_goblin.jpg" />
+                            <img src={ImgDatabase} />
                             <div className="project-card-img-p-ctn">
                                 <h3>Fun with Databases</h3>
                                 <p>Le but de ce projet était de m'entraîner au maniement d'une base de donnée relationelle et de comprendre comment relier Front-end et Back-end.
