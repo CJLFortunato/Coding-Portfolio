@@ -273,6 +273,10 @@ h1 {
       }
 
     }
+    img {
+      box-shadow: 0 0 5px 2px #ff0b7250;
+      margin-bottom: 1rem;
+    }
 
     a {
       text-decoration: none;
@@ -306,6 +310,12 @@ h1 {
       @include button($bright-yellow, #fefab330, $bright-yellow);
 
 
+    }
+
+    .inactive {
+      @include button(#555, transparent, transparent);
+      padding: 5px;
+      margin: 0;
     }
 
   }
