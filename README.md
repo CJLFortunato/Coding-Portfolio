@@ -1,1 +1,3 @@
-That's my portfolio website. You can see it at [cjlfortunato.work](www.cjlfortunato.work). It's a basic landing page with HTML and CSS. That's it. It doesn't use any special technologies, but it's pretty to look at. 
+That's my portfolio website. You can see it at [cjlfortunato.work](www.cjlfortunato.work). 
+
+It uses React and React-router as well as Sass.
