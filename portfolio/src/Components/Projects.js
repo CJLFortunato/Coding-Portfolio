@@ -32,7 +32,7 @@ function Projects( { children }) {
                     <div className="inner" style={{ transform: `translateX(-${activeIndex * 20}%)` }}>
 
                         <div className="project-card">
-                            <img src={ImgPortfolio} />
+                            <img src={ImgPortfolio} alt=""/>
                             <div className="project-card-img-p-ctn">
                                 <h3>Portfolio</h3>
                                 <p>Ce site! Refait intégralement le 16 avril 2022 en utilisant React et React-router. Cliquez sur les flèches de chaque côté pour essayer le carousel
@@ -46,12 +46,12 @@ function Projects( { children }) {
                             </div>
                             <div className="link-ctn">
                                 <p className="deployed inactive" >Vous voyez le résultat!</p>
-                                <a href="https://github.com/CJLFortunato/Coding-Portfolio" target="_blank" className="github">GitHub</a>
+                                <a href="https://github.com/CJLFortunato/Coding-Portfolio" target="_blank" className="github" rel="noreferrer">GitHub</a>
                             </div>
                         </div>
 
                         <div className="project-card">
-                            <img src={ImgDatabase} />
+                            <img src={ImgDatabase} alt=""/>
                             <div className="project-card-img-p-ctn">
                                 <h3>Fun with Databases</h3>
                                 <p>Le but de ce projet était de m'entraîner au maniement d'une base de donnée relationelle et de comprendre comment relier Front-end et Back-end.
@@ -65,13 +65,13 @@ function Projects( { children }) {
                                 </ul>
                             </div>
                             <div className="link-ctn">
-                                <a href="" target="_blank" className="deployed">Pas encore déployé</a>
-                                <a href="https://github.com/CJLFortunato/database-viewer" target="_blank" className="github">GitHub</a>
+                                <a href="/projects" target="_blank" className="deployed" rel="noreferrer">Pas encore déployé</a>
+                                <a href="https://github.com/CJLFortunato/database-viewer" target="_blank" className="github" rel="noreferrer">GitHub</a>
                             </div>
                         </div>
 
                         <div className="project-card">
-                            <img src={ImgWeather}/>
+                            <img src={ImgWeather} alt=""/>
                             <div className="project-card-img-p-ctn">
                                 <h3>Weather</h3>
                                 <p>Ce site vous permet de rentrer le nom d'une ville partout dans le monde, et l'API vous retournera le temps qu'il fait dans cette ville en ce moment.</p>
@@ -82,13 +82,13 @@ function Projects( { children }) {
                                 </ul>
                             </div>
                             <div className="link-ctn">
-                                <a href="https://weather-php-app.herokuapp.com/" target="_blank" className="deployed">Voir site</a>
-                                <a href="https://github.com/CJLFortunato/weather" target="_blank" className="github">GitHub</a>
+                                <a href="https://weather-php-app.herokuapp.com/" target="_blank" className="deployed" rel="noreferrer">Voir site</a>
+                                <a href="https://github.com/CJLFortunato/weather" target="_blank" className="github" rel="noreferrer">GitHub</a>
                             </div>
                         </div>
 
                         <div className="project-card">
-                            <img src={ImgJammming} />
+                            <img src={ImgJammming} alt=""/>
                             <div className="project-card-img-p-ctn">
                                 <h3>Jammming</h3>
                                 <p>Ce site est un projet Codecademy basé sur l'API du site Spotify.
@@ -101,13 +101,13 @@ function Projects( { children }) {
                                 </ul>
                             </div>
                             <div className="link-ctn">
-                                <a href=" http://react-jammming-music.surge.sh/" target="_blank" className="deployed">Voir site</a>
-                                <a href="https://github.com/CJLFortunato/Jammming" target="_blank" className="github">GitHub</a>
+                                <a href=" http://react-jammming-music.surge.sh/" target="_blank" className="deployed" rel="noreferrer">Voir site</a>
+                                <a href="https://github.com/CJLFortunato/Jammming" target="_blank" className="github" rel="noreferrer">GitHub</a>
                             </div>
                         </div>
 
                         <div className="project-card">
-                            <img src={ImgDice}/>
+                            <img src={ImgDice} alt=""/>
                             <div className="project-card-img-p-ctn">
                                 <h3>Lanceur de dés</h3>
                                 <p>Un site simple qui vous permet de lancer des dés, avec un focus sur les jeux de rôle sur table.
@@ -120,8 +120,8 @@ function Projects( { children }) {
                                 </ul>
                             </div>
                             <div className="link-ctn">
-                                <a href="https://cjlfortunato.github.io/Dice-roller/" target="_blank" className="deployed">Voir site</a>
-                                <a href="https://github.com/CJLFortunato/Dice-roller" target="_blank" className="github">GitHub</a>
+                                <a href="https://cjlfortunato.github.io/Dice-roller/" target="_blank" className="deployed" rel="noreferrer">Voir site</a>
+                                <a href="https://github.com/CJLFortunato/Dice-roller" target="_blank" className="github" rel="noreferrer">GitHub</a>
                             </div>
                         </div>
 

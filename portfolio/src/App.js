@@ -27,9 +27,9 @@ function App() {
 
         <main>
           <div className="bg">
-          <img src={Sun} className="sun"></img>
-          <img src={Wave2} className="wave2" width="1920" height="1080"></img>
-          <img src={Wave1} className="wave1" width="1920" height="1080"></img>
+          <img src={Sun} className="sun" alt=""></img>
+          <img src={Wave2} className="wave2" width="1920" height="1080" alt=""></img>
+          <img src={Wave1} className="wave1" width="1920" height="1080" alt=""></img>
           </div>
 
           <Routes>
