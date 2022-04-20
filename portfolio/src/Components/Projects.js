@@ -65,7 +65,7 @@ function Projects( { children }) {
                                 </ul>
                             </div>
                             <div className="link-ctn">
-                                <a href="/projects" target="_blank" className="deployed" rel="noreferrer">Pas encore déployé</a>
+                                <a href="https://fun-with-databases.herokuapp.com/" target="_blank" className="deployed" rel="noreferrer">Voir site</a>
                                 <a href="https://github.com/CJLFortunato/database-viewer" target="_blank" className="github" rel="noreferrer">GitHub</a>
                             </div>
                         </div>
