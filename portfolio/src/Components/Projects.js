@@ -4,17 +4,18 @@ import ImgDatabase from '../Ressources/project_database.jpg';
 import ImgWeather from '../Ressources/project_weather.jpg';
 import ImgJammming from '../Ressources/project_jammming.jpg';
 import ImgDice from '../Ressources/project_dice.jpg';
+import ImgSpacex from '../Ressources/project_spacex.jpg';
 
 
 
-function Projects( { children }) {
+function Projects({ children }) {
     const [activeIndex, setActiveIndex] = useState(0);
 
     const updateIndex = (newIndex) => {
         const nbCards = document.getElementsByClassName("project-card").length;
         console.log(nbCards);
         if (newIndex < 0) {
-            newIndex = nbCards -1;
+            newIndex = nbCards - 1;
         } else if (newIndex >= nbCards) {
             newIndex = 0;
         }
@@ -32,7 +33,27 @@ function Projects( { children }) {
                     <div className="inner" style={{ transform: `translateX(-${activeIndex * 20}%)` }}>
 
                         <div className="project-card">
-                            <img src={ImgPortfolio} alt=""/>
+                            <img src={ImgSpacex} alt="" />
+                            <div className="project-card-img-p-ctn">
+                                <h3>Dashboard SpaceX</h3>
+                                <p> Ce projet utilise l'API SpaceX et affiche les données qu'elle renvoie dans un tableau de bord comprenant une carte intéractive et des graphiques.
+                                </p>
+                                <h4>Technos</h4>
+                                <ul>
+                                    <li>React 17</li>
+                                    <li>Sass 1.51</li>
+                                    <li>react-chartjs-2 4.1.10</li>
+                                    <li>google-map-react 2.1.10</li>
+                                </ul>
+                            </div>
+                            <div className="link-ctn">
+                                <a href="https://spacex-api-dashboard.netlify.app/" target="_blank" className="deployed" rel="noreferrer">Voir site</a>
+                                <a href="https://github.com/CJLFortunato/spacex-dashboard" target="_blank" className="github" rel="noreferrer">GitHub</a>
+                            </div>
+                        </div>
+
+                        <div className="project-card">
+                            <img src={ImgPortfolio} alt="" />
                             <div className="project-card-img-p-ctn">
                                 <h3>Portfolio</h3>
                                 <p>Ce site! Refait intégralement le 16 avril 2022 en utilisant React et React-router. Cliquez sur les flèches de chaque côté pour essayer le carousel
@@ -51,7 +72,7 @@ function Projects( { children }) {
                         </div>
 
                         <div className="project-card">
-                            <img src={ImgDatabase} alt=""/>
+                            <img src={ImgDatabase} alt="" />
                             <div className="project-card-img-p-ctn">
                                 <h3>Fun with Databases</h3>
                                 <p>Le but de ce projet était de m'entraîner au maniement d'une base de donnée relationelle et de comprendre comment relier Front-end et Back-end.
@@ -71,7 +92,7 @@ function Projects( { children }) {
                         </div>
 
                         <div className="project-card">
-                            <img src={ImgWeather} alt=""/>
+                            <img src={ImgWeather} alt="" />
                             <div className="project-card-img-p-ctn">
                                 <h3>Weather</h3>
                                 <p>Ce site vous permet de rentrer le nom d'une ville partout dans le monde, et l'API vous retournera le temps qu'il fait dans cette ville en ce moment.</p>
@@ -88,26 +109,7 @@ function Projects( { children }) {
                         </div>
 
                         <div className="project-card">
-                            <img src={ImgJammming} alt=""/>
-                            <div className="project-card-img-p-ctn">
-                                <h3>Jammming</h3>
-                                <p>Ce site est un projet Codecademy basé sur l'API du site Spotify.
-                                    Il permet à l'utilisateur de chercher des pistes de chansons et de les ajouter à une nouvelle playlist sur leur compte.
-                                </p>
-                                <h4>Technos</h4>
-                                <ul>
-                                    <li>React 17</li>
-                                    <li>API Spotify</li>
-                                </ul>
-                            </div>
-                            <div className="link-ctn">
-                                <a href=" http://react-jammming-music.surge.sh/" target="_blank" className="deployed" rel="noreferrer">Voir site</a>
-                                <a href="https://github.com/CJLFortunato/Jammming" target="_blank" className="github" rel="noreferrer">GitHub</a>
-                            </div>
-                        </div>
-
-                        <div className="project-card">
-                            <img src={ImgDice} alt=""/>
+                            <img src={ImgDice} alt="" />
                             <div className="project-card-img-p-ctn">
                                 <h3>Lanceur de dés</h3>
                                 <p>Un site simple qui vous permet de lancer des dés, avec un focus sur les jeux de rôle sur table.
