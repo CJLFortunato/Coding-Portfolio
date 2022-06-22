@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import ImgPortfolio from '../Ressources/project_portfolio.jpg';
 import ImgDatabase from '../Ressources/project_database.jpg';
 import ImgWeather from '../Ressources/project_weather.jpg';
-import ImgJammming from '../Ressources/project_jammming.jpg';
 import ImgDice from '../Ressources/project_dice.jpg';
 import ImgSpacex from '../Ressources/project_spacex.jpg';
 
