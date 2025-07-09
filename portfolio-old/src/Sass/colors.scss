@@ -1,0 +1,323 @@
+/*
+This file is for the color scheme and purely aesthetic elements
+*/
+@font-face {
+  font-family: 'VCR OSD Mono';
+  src: url('../Ressources/VCR_OSD_MONO_1.001.ttf');
+}
+
+$hot-pink: #ff0b72;
+$bright-yellow: #fefab3;
+$salmonPink: #ff7686;
+$cardBgClr: rgba(25, 0, 40, 0.9);
+$skyblue: #0b9bff; 
+$softOrange: #ff7f6a;
+
+$titlefont: 'VCR OSD Mono',
+sans-serif;
+
+@mixin cards() {
+
+  border-radius: 10px;
+  background: repeating-linear-gradient(180deg, transparent, transparent 15px, rgba(25, 0, 40, 1) 15px, rgba(25, 0, 40, 1) 16px, transparent 16px),
+    repeating-linear-gradient(90deg, transparent, transparent 15px, rgba(25, 0, 40, 1) 15px, rgba(25, 0, 40, 1) 16px, transparent 16px);
+  background-color: $cardBgClr;
+  color: $salmonPink;
+  border-color: $salmonPink;
+  box-shadow: 0 0 5px 2px rgba(255, 11, 114, .5);
+}
+@mixin button($color, $bgColor, $shadowColor) {
+  color: $color;
+  border: 1px solid $color;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 2px $shadowColor;
+  text-shadow: 0px 0px 5px $shadowColor;
+  background-color: $bgColor;
+}
+
+.App {
+  background: rgb(131, 58, 180);
+  background: linear-gradient(180deg, rgba(11, 0, 40, 1) 0%, rgba(37, 9, 84, 1) 24%, rgba(93, 16, 122, 1) 53%, rgba(184, 37, 115, 1) 84%, rgba(255, 138, 117, 1) 100%);
+}
+
+.App-header {
+
+  background: linear-gradient(180deg, rgba(25, 0, 40, 1) 0%, rgba(25, 0, 40, 0.2) 100%);
+  background-color: transparent;
+
+  h4 {
+    font-family: $titlefont;
+    font-weight: 900;
+    color: white;
+    text-shadow: 2px 1px 0px $hot-pink, -2px -1px 0px $skyblue;
+    font-size: 3rem;
+    letter-spacing: -3px;
+    transform: skew(-10deg);
+  }
+
+  nav {
+    ul {
+
+
+      li {
+
+        a {
+          text-decoration: none;
+          padding: 7px;
+          font-family: $titlefont;
+          color: white;
+          text-shadow: 2px 1px 0px $hot-pink, -2px -1px 0px $skyblue;
+        }
+        a:hover{
+          text-shadow: 6px 3px 4px $hot-pink, -6px -3px 4px $skyblue;
+        }
+        a:active {
+          text-shadow: 6px 3px 4px $skyblue, -6px -3px 4px $hot-pink;
+        }
+
+      }
+    }
+  }
+
+}
+
+main {
+  background-color: transparent;
+}
+
+footer {
+
+  background: linear-gradient(0deg, rgba(25, 0, 40, 1) 0%, rgba(25, 0, 40, 0.2) 100%);
+  
+
+  p {
+
+    font-family: $titlefont;
+    color: white;
+    text-shadow: 2px 1px 0px $hot-pink, -2px -1px 0px $skyblue;
+  }
+
+  a {
+    text-decoration: none;
+    padding: 7px;
+    font-family: $titlefont;
+    color: white;
+    text-shadow: 2px 1px 0px $hot-pink, -2px -1px 0px $skyblue;
+    border-radius: 0;
+  }
+  a:hover{
+    text-shadow: 6px 3px 4px $hot-pink, -6px -3px 4px $skyblue;
+  }
+  a:active {
+    text-shadow: 6px 3px 4px $skyblue, -6px -3px 4px $hot-pink;
+  }
+}
+h3 {
+  color: white;
+  text-shadow: 1px 0px 0px $hot-pink, -1px 0px 0px $skyblue;
+}
+
+h1 {
+  font-family: $titlefont;
+  color: white;
+  text-shadow: 5px 3px 0px $hot-pink, -5px -3px 0px $skyblue;
+  background-color: rgba(25, 0, 40, 1);
+  width: 70%;
+  text-align: center;
+  transform: skew(-10deg);
+  
+}
+
+//====================================================================================================================================================
+// Presentation component
+//====================================================================================================================================================
+
+.presentation {
+
+  .card {
+
+    @include cards;
+
+  
+  ul {
+      color: $softOrange;
+      a {
+        color: $softOrange;
+        text-decoration: underline 1px dashed $softOrange;
+      }
+      a:hover {
+        color: $bright-yellow;
+        text-decoration: underline 1px solid $bright-yellow;
+      }
+
+     li {
+        
+         ul {
+           
+             
+             li {
+              color: $salmonPink;
+             }
+         }
+     }
+  }
+
+  #link{
+    display: inline-block;
+    margin: 1rem 0;
+    text-decoration: none;
+    @include button($hot-pink, transparent, transparent);
+    padding: 5px;
+  }
+  #link:hover {
+      
+    @include button($hot-pink, #ff0b7130, $hot-pink);
+  }
+  #link:active {
+    
+    @include button($bright-yellow, #fefab330, $bright-yellow);
+  }
+
+  p {
+    color: $salmonPink;
+  }
+  
+  }
+  strong {
+    color: $softOrange;
+  }
+}
+
+//====================================================================================================================================================
+// Skills component
+//====================================================================================================================================================
+
+.skills {
+
+  h1 {
+    font-family: $titlefont;
+    color: white;
+    text-shadow: 5px 3px 0px $hot-pink, -5px -3px 0px $skyblue;
+    background-color: rgba(25, 0, 40, 1);
+    width: 70%;
+    text-align: center;
+    transform: skew(-10deg);
+    
+  }
+
+  p {
+    z-index: 20;
+  }
+
+  h3 {
+   
+    margin : 5px 0;
+    color: white;
+    text-shadow: 1px 0px 0px $hot-pink, -1px 0px 0px $skyblue;
+
+
+  }
+
+  .skills-card-ctn {
+    @include cards;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skills-grid-container {
+
+    .skill-card {
+      background-color: transparent;
+    }
+
+    .skill-card p {
+      color: $salmonPink;
+    }
+
+    .skill-card i {
+      color: $salmonPink;
+
+    }
+  }
+
+
+}
+
+//====================================================================================================================================================
+// Projects component
+//====================================================================================================================================================
+
+.projects {
+
+
+  h1 {
+    font-family: $titlefont;
+    color: white;
+    text-shadow: 5px 3px 0px $hot-pink, -5px -3px 0px $skyblue;
+    background-color: rgba(25, 0, 40, 1);
+    width: 70%;
+    text-align: center;
+    transform: skew(-10deg);
+  }
+
+  .projects-container {
+
+    // Carousel --------------------------------------------------------------
+
+    .carousel {
+
+      .project-card {
+
+        @include cards;
+      }
+
+    }
+    img {
+      box-shadow: 0 0 5px 2px #ff0b7250;
+      margin-bottom: 1rem;
+    }
+
+    a {
+      text-decoration: none;
+      padding: 5px;
+      
+      @include button($hot-pink, transparent, transparent);
+    }
+    a:hover {
+      
+      @include button($hot-pink, #ff0b7130, $hot-pink);
+    }
+    a:active {
+      
+      @include button($bright-yellow, #fefab330, $bright-yellow);
+    }
+
+    button {
+
+      @include button($salmonPink, transparent, transparent);
+
+
+    }
+    button:hover {
+
+      @include button($salmonPink, #ff768630, $salmonPink);
+
+
+    }
+    button:active {
+
+      @include button($bright-yellow, #fefab330, $bright-yellow);
+
+
+    }
+
+    .inactive {
+      @include button(#555, transparent, transparent);
+      padding: 5px;
+      margin: 0;
+    }
+
+  }
+
+}

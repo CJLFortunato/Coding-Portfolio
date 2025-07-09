@@ -3,7 +3,7 @@ This file is for the color scheme and purely aesthetic elements
 */
 @font-face {
   font-family: 'VCR OSD Mono';
-  src: url('../Ressources/VCR_OSD_MONO_1.001.ttf');
+  src: url('../../public/VCR_OSD_MONO_1.001.ttf');
 }
 
 $hot-pink: #ff0b72;
@@ -35,12 +35,12 @@ sans-serif;
   background-color: $bgColor;
 }
 
-.App {
+body {
   background: rgb(131, 58, 180);
   background: linear-gradient(180deg, rgba(11, 0, 40, 1) 0%, rgba(37, 9, 84, 1) 24%, rgba(93, 16, 122, 1) 53%, rgba(184, 37, 115, 1) 84%, rgba(255, 138, 117, 1) 100%);
 }
 
-.App-header {
+header {
 
   background: linear-gradient(180deg, rgba(25, 0, 40, 1) 0%, rgba(25, 0, 40, 0.2) 100%);
   background-color: transparent;
@@ -88,10 +88,9 @@ main {
 footer {
 
   background: linear-gradient(0deg, rgba(25, 0, 40, 1) 0%, rgba(25, 0, 40, 0.2) 100%);
-  
+
 
   p {
-
     font-family: $titlefont;
     color: white;
     text-shadow: 2px 1px 0px $hot-pink, -2px -1px 0px $skyblue;
@@ -106,10 +105,10 @@ footer {
     border-radius: 0;
   }
   a:hover{
-    text-shadow: 6px 3px 4px $hot-pink, -6px -3px 4px $skyblue;
+    text-shadow: 6px 3px 0px $hot-pink, -6px -3px 0px $skyblue;
   }
   a:active {
-    text-shadow: 6px 3px 4px $skyblue, -6px -3px 4px $hot-pink;
+    text-shadow: 6px 3px 0px $skyblue, -6px -3px 0px $hot-pink;
   }
 }
 h3 {
@@ -125,7 +124,7 @@ h1 {
   width: 70%;
   text-align: center;
   transform: skew(-10deg);
-  
+
 }
 
 //====================================================================================================================================================
