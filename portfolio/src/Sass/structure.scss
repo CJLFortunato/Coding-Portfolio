@@ -188,87 +188,8 @@ footer {
     }
 }
 
+
   //====================================================================================================================================================
-  // Skills component
-  //====================================================================================================================================================
-
-  .skills {
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    z-index: 20;
-
-    h1 {
-        font-size: 5rem;
-    }
-
-    .cards-ctn {
-        
-        z-index: 10;
-        display: flex;
-        flex-direction: row;
-        width: 90%;
-        z-index: 20;
-        justify-content: space-evenly;
-
-        .skills-card-ctn {
-            border: 1px solid black;
-            margin: 1rem;
-            padding: 15px;
-            width: 20%;
-            height: 30rem;
-            z-index: 20;
-
-            .skills-grid-container {
-                display: grid;
-                grid-template-columns: 1fr 1fr 1fr;
-                grid-auto-rows: 100px;
-                gap: 15px;
-                margin-top: 2rem;
-                z-index: 20;
-        
-                .skill-card {
-                width: 100px;
-                height: 100px;
-                z-index: 20;
-              }
-              .skill-card p {
-                text-align: center;
-                font-size: 1rem;
-                font-weight: bold;
-                line-height: initial;
-                width: 100%;
-                z-index: 20;
-                margin-bottom: 0;
-              }
-              .skill-card i {
-                font-size: 2.5rem;
-                z-index: 20;
-              }
-              .one-line i{
-                margin-bottom: 1rem;
-                z-index: 20;
-              }
-              }
-
-
-        }
-
-
-
-
-
-
-    }
-
-    
-    
-
-    
-  }
-
-    //====================================================================================================================================================
   // Projects component
   //====================================================================================================================================================
 
@@ -276,94 +197,53 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
-    // border: 1px solid aqua;
+    justify-content: flex-start;
+    border: 1px solid aqua;
     height: 100%;
     z-index: 20;
 
     h1{
-        margin: .5rem;
+        margin: 2rem;
         z-index: 20;
         font-size: 5rem;
-        
+        margin-bottom: 7rem;
     }
 
     .projects-container  {
-       
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-around;
-        // border: 1px solid green;
-        width: 68%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+      border: 1px solid lightgreen;
+      width: 68%;
+      z-index: 20;
+
+      .project-card {
+        display: inline-flex;
+        flex-direction: column;
+        width: 22rem;
+        margin: 1rem;
+        // border: 1px solid aqua;
+        padding: 15px;
+        height: 20rem;
+        white-space: normal;
         z-index: 20;
+        align-items: center;
 
-        // Carousel --------------------------------------------------------------
-
-        .carousel {
-            overflow: hidden;
-            // border: 1px solid red;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: flex-start;
-            width: 88%;
+        img {
+            width: 100%;
+            height: 150px;
             z-index: 20;
-
-            .inner {
-                white-space: nowrap;
-                transition: transform 0.3s ;
-                // border: 1px solid blue;
-                display: flex;
-                flex-direction: row;
-                z-index: 20;
-            }
-    
-            .project-card {
-                display: inline-flex;
-                flex-direction: column;
-                width: 22rem;
-                margin: 1rem;
-                border: 1px solid aqua;
-                padding: 15px;
-                height: 35rem;
-                white-space: normal;
-                z-index: 20;
-                align-items: center;
-
-                img {
-                    width: 100%;
-                    height: 150px;
-                    z-index: 20;
-                }
-                .project-card-img-p-ctn {
-                    display: flex;
-                    flex-flow: column nowrap;
-                    justify-items: flex-start;
-                    align-items: flex-start;
-                    height: 65%;
-                  }
-                  h3 {
-                   
-                    align-self: center; 
-                  }
-                  h4 {
-                      margin: 1%;
-                  }
-
-                .link-ctn {
-                   justify-self: flex-end;
-                   display: flex;
-                    flex-flow: row nowrap;
-                    margin: 0;
-                    width: 100%;
-                    justify-content: space-between;
-                    font-size: 1.2rem;
- 
-                }
-            }
-    
         }
+
+        h2 {
+          margin: .5rem;
+        }
+
+        p {
+          text-align: center;
+        }
+      }
 
         button {
 
@@ -372,12 +252,70 @@ footer {
                 z-index: 20;
             }
         }
-      
     }
-    
-
-    
-    
   }
 
-  
+  //====================================================================================================================================================
+  // Project component
+  //====================================================================================================================================================
+
+  .project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    // border: 1px solid aqua;
+    height: 100%;
+    z-index: 20;
+
+    h1{
+        margin: 2rem;
+        z-index: 20;
+        font-size: 5rem;
+        margin-bottom: 2.5rem;
+    }
+    article {
+      display: flex;
+      gap: 2rem;
+      flex-direction: row;
+      // border: 1px solid limegreen;
+      height: 35rem;
+      width: 70%;
+
+      aside {
+        // border: 1px solid aqua;
+        width: 30%;
+        padding: .5% 2%;
+
+        h3 {
+          font-size: 1.1rem;
+          margin: 0.5rem;
+        }
+
+        ul {
+          margin : 0;
+        }
+      }
+
+      section {
+        // border: 1px solid yellow;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap : 2rem;
+
+        .desc-ctn {
+        height: 60%;
+        padding: .5% 2%;
+        }
+
+        .img-ctn {
+          // border: 1px solid teal;
+          width: 100%;
+          height: 40%;
+          padding: .5% 2%;
+        }
+      }
+    }
+  }
+

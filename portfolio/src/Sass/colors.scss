@@ -18,7 +18,7 @@ sans-serif;
 
 @mixin cards() {
 
-  border-radius: 10px;
+  border-radius: 5px;
   background: repeating-linear-gradient(180deg, transparent, transparent 15px, rgba(25, 0, 40, 1) 15px, rgba(25, 0, 40, 1) 16px, transparent 16px),
     repeating-linear-gradient(90deg, transparent, transparent 15px, rgba(25, 0, 40, 1) 15px, rgba(25, 0, 40, 1) 16px, transparent 16px);
   background-color: $cardBgClr;
@@ -137,7 +137,6 @@ h1 {
 
     @include cards;
 
-  
   ul {
       color: $softOrange;
       a {
@@ -150,10 +149,8 @@ h1 {
       }
 
      li {
-        
+
          ul {
-           
-             
              li {
               color: $salmonPink;
              }
@@ -169,18 +166,18 @@ h1 {
     padding: 5px;
   }
   #link:hover {
-      
+
     @include button($hot-pink, #ff0b7130, $hot-pink);
   }
   #link:active {
-    
+
     @include button($bright-yellow, #fefab330, $bright-yellow);
   }
 
   p {
     color: $salmonPink;
   }
-  
+
   }
   strong {
     color: $softOrange;
@@ -188,68 +185,10 @@ h1 {
 }
 
 //====================================================================================================================================================
-// Skills component
-//====================================================================================================================================================
-
-.skills {
-
-  h1 {
-    font-family: $titlefont;
-    color: white;
-    text-shadow: 5px 3px 0px $hot-pink, -5px -3px 0px $skyblue;
-    background-color: rgba(25, 0, 40, 1);
-    width: 70%;
-    text-align: center;
-    transform: skew(-10deg);
-    
-  }
-
-  p {
-    z-index: 20;
-  }
-
-  h3 {
-   
-    margin : 5px 0;
-    color: white;
-    text-shadow: 1px 0px 0px $hot-pink, -1px 0px 0px $skyblue;
-
-
-  }
-
-  .skills-card-ctn {
-    @include cards;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .skills-grid-container {
-
-    .skill-card {
-      background-color: transparent;
-    }
-
-    .skill-card p {
-      color: $salmonPink;
-    }
-
-    .skill-card i {
-      color: $salmonPink;
-
-    }
-  }
-
-
-}
-
-//====================================================================================================================================================
 // Projects component
 //====================================================================================================================================================
 
 .projects {
-
-
   h1 {
     font-family: $titlefont;
     color: white;
@@ -261,62 +200,49 @@ h1 {
   }
 
   .projects-container {
-
-    // Carousel --------------------------------------------------------------
-
-    .carousel {
-
       .project-card {
 
         @include cards;
       }
 
-    }
     img {
       box-shadow: 0 0 5px 2px #ff0b7250;
       margin-bottom: 1rem;
     }
 
-    a {
-      text-decoration: none;
-      padding: 5px;
-      
-      @include button($hot-pink, transparent, transparent);
-    }
-    a:hover {
-      
-      @include button($hot-pink, #ff0b7130, $hot-pink);
-    }
-    a:active {
-      
-      @include button($bright-yellow, #fefab330, $bright-yellow);
-    }
-
-    button {
-
-      @include button($salmonPink, transparent, transparent);
-
-
-    }
-    button:hover {
-
-      @include button($salmonPink, #ff768630, $salmonPink);
-
-
-    }
-    button:active {
-
-      @include button($bright-yellow, #fefab330, $bright-yellow);
-
-
-    }
-
-    .inactive {
-      @include button(#555, transparent, transparent);
-      padding: 5px;
-      margin: 0;
+    h2 {
+      color: $softOrange;
+      font-family: $titlefont;
     }
 
   }
 
 }
+
+//====================================================================================================================================================
+  // Project component
+  //====================================================================================================================================================
+
+  .project {
+
+    article {
+      h2 {
+      color: $softOrange;
+      font-family: $titlefont;
+      }
+    }
+
+    aside {
+      @include cards;
+    }
+
+    section {
+      .desc-ctn {
+        @include cards;
+      }
+
+      .img-ctn {
+        @include cards;
+      }
+    }
+  }

@@ -160,141 +160,103 @@ h3 {
   font-weight: normal;
 }
 
-.skills {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  z-index: 20;
-}
-.skills h1 {
-  font-size: 5rem;
-}
-.skills .cards-ctn {
-  z-index: 10;
-  display: flex;
-  flex-direction: row;
-  width: 90%;
-  z-index: 20;
-  justify-content: space-evenly;
-}
-.skills .cards-ctn .skills-card-ctn {
-  border: 1px solid black;
-  margin: 1rem;
-  padding: 15px;
-  width: 20%;
-  height: 30rem;
-  z-index: 20;
-}
-.skills .cards-ctn .skills-card-ctn .skills-grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-auto-rows: 100px;
-  gap: 15px;
-  margin-top: 2rem;
-  z-index: 20;
-}
-.skills .cards-ctn .skills-card-ctn .skills-grid-container .skill-card {
-  width: 100px;
-  height: 100px;
-  z-index: 20;
-}
-.skills .cards-ctn .skills-card-ctn .skills-grid-container .skill-card p {
-  text-align: center;
-  font-size: 1rem;
-  font-weight: bold;
-  line-height: initial;
-  width: 100%;
-  z-index: 20;
-  margin-bottom: 0;
-}
-.skills .cards-ctn .skills-card-ctn .skills-grid-container .skill-card i {
-  font-size: 2.5rem;
-  z-index: 20;
-}
-.skills .cards-ctn .skills-card-ctn .skills-grid-container .one-line i {
-  margin-bottom: 1rem;
-  z-index: 20;
-}
-
 .projects {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: flex-start;
+  border: 1px solid aqua;
   height: 100%;
   z-index: 20;
 }
 .projects h1 {
-  margin: 0.5rem;
+  margin: 2rem;
   z-index: 20;
   font-size: 5rem;
+  margin-bottom: 7rem;
 }
 .projects .projects-container {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
+  border: 1px solid lightgreen;
   width: 68%;
   z-index: 20;
 }
-.projects .projects-container .carousel {
-  overflow: hidden;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  width: 88%;
-  z-index: 20;
-}
-.projects .projects-container .carousel .inner {
-  white-space: nowrap;
-  transition: transform 0.3s;
-  display: flex;
-  flex-direction: row;
-  z-index: 20;
-}
-.projects .projects-container .carousel .project-card {
+.projects .projects-container .project-card {
   display: inline-flex;
   flex-direction: column;
   width: 22rem;
   margin: 1rem;
-  border: 1px solid aqua;
   padding: 15px;
-  height: 35rem;
+  height: 20rem;
   white-space: normal;
   z-index: 20;
   align-items: center;
 }
-.projects .projects-container .carousel .project-card img {
+.projects .projects-container .project-card img {
   width: 100%;
   height: 150px;
   z-index: 20;
 }
-.projects .projects-container .carousel .project-card .project-card-img-p-ctn {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-items: flex-start;
-  align-items: flex-start;
-  height: 65%;
+.projects .projects-container .project-card h2 {
+  margin: 0.5rem;
 }
-.projects .projects-container .carousel .project-card h3 {
-  align-self: center;
-}
-.projects .projects-container .carousel .project-card h4 {
-  margin: 1%;
-}
-.projects .projects-container .carousel .project-card .link-ctn {
-  justify-self: flex-end;
-  display: flex;
-  flex-flow: row nowrap;
-  margin: 0;
-  width: 100%;
-  justify-content: space-between;
-  font-size: 1.2rem;
+.projects .projects-container .project-card p {
+  text-align: center;
 }
 .projects .projects-container button i {
   font-size: 6rem;
   z-index: 20;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+  z-index: 20;
+}
+.project h1 {
+  margin: 2rem;
+  z-index: 20;
+  font-size: 5rem;
+  margin-bottom: 2.5rem;
+}
+.project article {
+  display: flex;
+  gap: 2rem;
+  flex-direction: row;
+  height: 35rem;
+  width: 70%;
+}
+.project article aside {
+  width: 30%;
+  padding: 0.5% 2%;
+}
+.project article aside h3 {
+  font-size: 1.1rem;
+  margin: 0.5rem;
+}
+.project article aside ul {
+  margin: 0;
+}
+.project article section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.project article section .desc-ctn {
+  height: 60%;
+  padding: 0.5% 2%;
+}
+.project article section .img-ctn {
+  width: 100%;
+  height: 40%;
+  padding: 0.5% 2%;
 }
 
 /*# sourceMappingURL=structure.css.map */
