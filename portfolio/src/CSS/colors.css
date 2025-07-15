@@ -31,10 +31,10 @@ header nav ul li a {
   text-shadow: 2px 1px 0px #ff0b72, -2px -1px 0px #0b9bff;
 }
 header nav ul li a:hover {
-  text-shadow: 6px 3px 4px #ff0b72, -6px -3px 4px #0b9bff;
+  text-shadow: 6px 3px 0px #ff0b72, -6px -3px 0px #0b9bff;
 }
 header nav ul li a:active {
-  text-shadow: 6px 3px 4px #0b9bff, -6px -3px 4px #ff0b72;
+  text-shadow: 6px 3px 0px #0b9bff, -6px -3px 0px #ff0b72;
 }
 
 main {

@@ -10,7 +10,7 @@ $hot-pink: #ff0b72;
 $bright-yellow: #fefab3;
 $salmonPink: #ff7686;
 $cardBgClr: rgba(25, 0, 40, 0.9);
-$skyblue: #0b9bff; 
+$skyblue: #0b9bff;
 $softOrange: #ff7f6a;
 
 $titlefont: 'VCR OSD Mono',
@@ -69,10 +69,10 @@ header {
           text-shadow: 2px 1px 0px $hot-pink, -2px -1px 0px $skyblue;
         }
         a:hover{
-          text-shadow: 6px 3px 4px $hot-pink, -6px -3px 4px $skyblue;
+          text-shadow: 6px 3px 0px $hot-pink, -6px -3px 0px $skyblue;
         }
         a:active {
-          text-shadow: 6px 3px 4px $skyblue, -6px -3px 4px $hot-pink;
+          text-shadow: 6px 3px 0px $skyblue, -6px -3px 0px $hot-pink;
         }
 
       }
