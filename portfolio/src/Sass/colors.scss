@@ -234,6 +234,10 @@ h1 {
 
     aside {
       @include cards;
+
+        h3 {
+        color: $salmonPink;
+        }
     }
 
     section {
