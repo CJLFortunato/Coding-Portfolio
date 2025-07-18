@@ -1,3 +1,4 @@
+import Lefter from "~/components/Lefter";
 import type { Route } from "./+types/home";
 
 export function meta({}: Route.MetaArgs) {
@@ -14,7 +15,7 @@ export function loader({ context }: Route.LoaderArgs) {
 export default function Home({ loaderData }: Route.ComponentProps) {
   return (
     <main>
-      <h1>test</h1>
+      <Lefter />
     </main>
   );
 }
