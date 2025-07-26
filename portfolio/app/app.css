@@ -2,6 +2,7 @@ html,
 body {
 background-color: rgb(29, 9, 43);
 color: white;
+font-family: 'Montserrat', serif;
 }
 
 main {
@@ -11,12 +12,160 @@ main {
   height: 100vh;
 }
 
+h1, h2, h3 {
+  font-family: 'Inconsolata', monospace;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+li {
+  list-style-type: "- ";
+}
+
+hr {
+  border: none;
+  color: rgb(93,16,122);
+  background: linear-gradient(to right, rgb(37,9,84), rgb(93,16,122), rgb(184, 37,115), rgb(255,138,117));
+  height: 4px;
+  width: 100%;
+  text-align: left;
+  margin-bottom: 1rem;
+}
 
 aside {
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   width: 40%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
+  position: fixed;
+  height: 100vh;
+  padding: 10%;
+}
+
+aside h1, aside h2 {
+  margin: 0.2rem;
+}
+
+article {
+  width: 60%;
+  /* border: 1px solid red; */
+  padding: 1%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 40%;
+  height: fit-content;
+}
+
+.intro {
+  width: 70%;
+  font-size: 1.3rem;
+}
+
+.body-section {
+  /* border: 1px dashed blue; */
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 5rem 0;
+}
+
+.body-section p, .body-section h3, .body-section ul, .body-section li {
+  margin: 0.5rem;
+}
+
+.body-section h3 {
+  color: rgb(255,138,117);
+}
+
+.body-section h2 {
+  margin: 0.2rem;
+}
+
+time {
+  color: rgb(184, 37,115);
+  font-size: .9rem;
+}
+
+.body-section section {
+  margin-bottom: 1rem;
+}
+
+figure {
+  display: flex;
+  flex-direction: row;
+  /* border: 1px solid deeppink; */
+  width: 100%;
+  margin:0;
+  gap: 10px;
+}
+
+figure img {
+  height: 10rem;
+}
+
+figcaption {
+  font-size: .9rem;
+}
+
+.tech-ctn {
+  margin-top: .6rem;
+}
+
+h6 {
+  font-size: 0.9rem;
+  font-weight: 400;
+  border: 1px solid rgb(184, 37,115);
+  color: rgb(184, 37,115);
+  display: inline-block;
+  margin: .25rem;
+  padding: 4px;
+
+}
+
+.link-ctn {
+  /* border: 1px solid salmon; */
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  margin: 1rem 0;
+}
+
+.icon-link {
+  font-size: 3rem;
+  color: rgb(255,138,117);
+  /* margin-right: 2rem; */
+}
+.icon-link:hover, .icon-link:active {
+  color: rgb(184, 37,115);
+}
+
+.contact-btn button{
+  background-color: rgb(255,138,117);
+  text-decoration: none;
+  border: none;
+  display: inline-block;
+  width: 160px;
+  height: 3rem;
+  color: rgb(29, 9, 43);
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.contact-btn button:hover, .contact-btn button:active {
+  background-color: rgb(184, 37,115);
 }
