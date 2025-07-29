@@ -35,8 +35,10 @@ export function links() {
   ];
 }
 
-export function loader({ context }: Route.LoaderArgs) {
-  return { message: context.VALUE_FROM_NETLIFY };
+export function clientLoader({
+  params,
+}: Route.ClientLoaderArgs) {
+  return { message: params};
 }
 
 export default function Home({ loaderData }: Route.ComponentProps) {

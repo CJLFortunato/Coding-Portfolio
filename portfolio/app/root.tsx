@@ -26,8 +26,9 @@ export const links: Route.LinksFunction = () => [
 ];
 
 export function Layout({ children }: { children: React.ReactNode }) {
+  console.log(children);
   return (
-    <html lang="en">
+    <html>
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -44,6 +45,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
 }
 
 export const LangContext = createContext('fra');
+console.log(LangContext);
 
 export default function App() {
   return <Outlet />;
