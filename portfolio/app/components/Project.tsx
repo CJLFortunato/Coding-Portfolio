@@ -10,7 +10,7 @@ export default function Project (props: any) {
           <br />
           <div className="tech-ctn">
           {
-            project.tech.map((el: string) => <h6>{el}</h6>)
+            project.tech.map((el: string) => <h6 key={el}>{el}</h6>)
           }
           </div>
         </figcaption>

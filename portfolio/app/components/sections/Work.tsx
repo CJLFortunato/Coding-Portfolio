@@ -11,7 +11,7 @@ export default function Work () {
       <h2>{APP_TEXT[lang].work.title}</h2>
       <hr />
       {APP_TEXT[lang].work.content.map((item) =>(
-        <Item item={item} />
+        <Item item={item} key={item.period} />
       ))}
     </section>
   );

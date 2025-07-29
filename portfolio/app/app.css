@@ -92,7 +92,7 @@ article {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin: 5rem 0;
+  margin: 4rem 0;
 }
 
 .body-section p, .body-section h3, .body-section ul, .body-section li {

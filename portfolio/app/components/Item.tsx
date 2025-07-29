@@ -7,7 +7,7 @@ export default function Item (props: any) {
       <p><strong>{item.company}</strong></p>
       <p>{item.summary}</p>
       <ul>
-        {item.tasks.map((task:string) => <li>{task}</li>)}
+        {item.tasks.map((task:string) => <li key={task.slice(0, 20)}>{task}</li>)}
       </ul>
     </section>
   );

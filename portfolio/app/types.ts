@@ -2,6 +2,7 @@ export type Lefter = {
   jobTitle: string,
   summary: string,
   contactBtn: string,
+  cv: string,
 }
 
 export type WorkSchool = {

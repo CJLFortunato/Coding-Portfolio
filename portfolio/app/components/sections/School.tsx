@@ -11,7 +11,7 @@ export default function School () {
       <h2>{APP_TEXT[lang].school.title}</h2>
       <hr />
       {APP_TEXT[lang].school.content.map((item) =>(
-        <Item item={item} />
+        <Item item={item} key={item.period} />
       ))}
     </section>
   );

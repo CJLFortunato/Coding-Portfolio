@@ -11,7 +11,7 @@ export default function Projects () {
       <h2>{APP_TEXT[lang].projects.title}</h2>
       <hr />
       {APP_TEXT[lang].projects.content.map((project) =>(
-        <Project project={project} />
+        <Project project={project}  key={project.title} />
       ))}
     </section>
   );

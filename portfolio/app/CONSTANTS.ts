@@ -6,6 +6,7 @@ const APP_TEXT: AppTextType = {
       jobTitle: 'Développeur Full Stack',
       summary: 'Conception et réalisation d\'applications web full stack',
       contactBtn: 'Contactez-moi',
+      cv: 'CV_fr.pdf'
     },
     persProf: `Dans le milieu du dévelopment web depuis plusieurs années,
                 je souhaite vous apporter
@@ -62,7 +63,7 @@ const APP_TEXT: AppTextType = {
         },
         {
           job: 'Front-End Engineer Career Path Certification',
-          period: 'Octobre 2022 - Novembre 2023',
+          period: 'Juin 2021 - Octobre 2021',
           company: 'Codecademy.com - Certification en ligne',
           summary: '',
           tasks: [
@@ -103,6 +104,7 @@ const APP_TEXT: AppTextType = {
       jobTitle: 'Full Stack Developer',
       summary: 'I design and build full stack web applications',
       contactBtn: 'Contact me',
+      cv: 'CV_en.pdf'
     },
     persProf: `Working in web development for several years,
     I can help you bring your projects to life using my skills and my sense of design`,
@@ -156,7 +158,7 @@ const APP_TEXT: AppTextType = {
         },
         {
           job: 'Front-End Engineer Career Path Certification',
-          period: 'October 2022 - November 2023',
+          period: 'June 2021 - October 2021',
           company: 'Codecademy.com - Online certification',
           summary: '',
           tasks: [

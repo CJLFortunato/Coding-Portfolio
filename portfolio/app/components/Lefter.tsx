@@ -8,6 +8,7 @@ import APP_TEXT from '~/CONSTANTS';
 
 export default function Lefter ({ setLang }: { setLang: Function }) {
   const lang = useContext(LangContext);
+  console.log(lang);
   return (
     <aside>
       <div className="lang-ctn">
@@ -52,7 +53,7 @@ export default function Lefter ({ setLang }: { setLang: Function }) {
       <div className='link-ctn'>
         <a href="mailto:clemence.fortunato@gmail.com" title="clemence.fortunato@gmail.com" className='contact-btn'>
           <button>{APP_TEXT[lang].lefter.contactBtn}</button></a>
-        <a href="CV_fr_light.pdf" download="fortunato_clemence_CV.pdf" target="_blank" className='contact-btn'><button>CV</button></a>
+        <a href={APP_TEXT[lang].lefter.cv} download="fortunato_clemence_CV.pdf" target="_blank" className='contact-btn'><button>CV</button></a>
       </div>
     </aside>
   );
