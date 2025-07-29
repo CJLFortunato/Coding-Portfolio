@@ -1,18 +1,21 @@
+import { useContext } from 'react';
+
 import Projects from "./sections/Projects";
 import School from "./sections/School";
 import Work from "./sections/Work";
+import { LangContext } from '~/root';
+import APP_TEXT from '~/CONSTANTS';
 
 export default function Body () {
+  const lang = useContext(LangContext);
   return (
     <article>
       <p className="intro">
-        Fraîchement reconvertie dans le développement web, je souhaite
-        vous apporter mes compétences et mon sens du design pour vous
-        aider dans la réalisation de vos projets.
+        {APP_TEXT[lang].persProf}
       </p>
       <Work />
-      <School />
       <Projects />
+      <School />
     </article>
   );
 }

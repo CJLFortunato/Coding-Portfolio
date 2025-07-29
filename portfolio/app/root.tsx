@@ -1,3 +1,4 @@
+import { createContext } from 'react';
 import {
   isRouteErrorResponse,
   Links,
@@ -41,6 +42,8 @@ export function Layout({ children }: { children: React.ReactNode }) {
     </html>
   );
 }
+
+export const LangContext = createContext('fra');
 
 export default function App() {
   return <Outlet />;

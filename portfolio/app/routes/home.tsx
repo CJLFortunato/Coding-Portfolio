@@ -1,6 +1,9 @@
+import { useState } from "react";
+
 import Lefter from "~/components/Lefter";
 import type { Route } from "./+types/home";
 import Body from "~/components/Body";
+import { LangContext } from "~/root";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -37,10 +40,13 @@ export function loader({ context }: Route.LoaderArgs) {
 }
 
 export default function Home({ loaderData }: Route.ComponentProps) {
+  const [lang, setLang] = useState('fra');
   return (
-    <main>
-      <Lefter />
-      <Body />
-    </main>
+    <LangContext value={lang}>
+      <main>
+        <Lefter setLang={setLang} />
+        <Body />
+      </main>
+    </LangContext>
   );
 }
