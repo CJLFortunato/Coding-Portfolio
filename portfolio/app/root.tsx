@@ -26,7 +26,6 @@ export const links: Route.LinksFunction = () => [
 ];
 
 export function Layout({ children }: { children: React.ReactNode }) {
-  console.log(children);
   return (
     <html>
       <head>
@@ -45,7 +44,6 @@ export function Layout({ children }: { children: React.ReactNode }) {
 }
 
 export const LangContext = createContext('fra');
-console.log(LangContext);
 
 export default function App() {
   return <Outlet />;

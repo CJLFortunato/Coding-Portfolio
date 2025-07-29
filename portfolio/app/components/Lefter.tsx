@@ -8,7 +8,7 @@ import APP_TEXT from '~/CONSTANTS';
 
 export default function Lefter ({ setLang }: { setLang: Function }) {
   const lang = useContext(LangContext);
-  console.log(lang);
+
   return (
     <aside>
       <div className="lang-ctn">
