@@ -54,6 +54,18 @@ aside {
   padding: 10%;
 }
 
+aside .lang-ctn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 5px;
+}
+
+aside .lang-ctn button {
+  background-color: transparent;
+  border: none;
+}
+
 aside h1, aside h2 {
   margin: 0.2rem;
 }
