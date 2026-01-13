@@ -2,7 +2,11 @@ export default function Project (props: any) {
   const { project } = props;
   return (
     <section>
-      <h3>{project.title}</h3>
+      {
+        project.link
+          ? <a href={project.link}><h3>{project.title}</h3></a>
+          : <h3>{project.title}</h3>
+      }
       <figure>
         <img src={project.img} alt={project.title} />
         <figcaption>

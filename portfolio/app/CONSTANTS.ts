@@ -80,6 +80,7 @@ const APP_TEXT: AppTextType = {
       content: [
         {
           title: 'benhur',
+          link:'',
           img: 'benhur_1.jpg',
           summary: `Outil interne destiné à améliorer la performance des équipes
                     en facilitant la récupération des données SEO des clients
@@ -94,6 +95,17 @@ const APP_TEXT: AppTextType = {
             'postGreSQL',
             'Apache airflow',
             'Docker'
+          ]
+        },
+        {
+          title: 'Word Salad (WIP)',
+          link:'https://github.com/CJLFortunato/wordsalad',
+          img: 'wordsalad.jpg',
+          summary: `Outil pour les auteurs qui leur permet de loguer le nombre de mots écrit sur chacun de leurs projets.`,
+          tech: [
+            'Django',
+            'SQLite',
+            'CanvasJS'
           ]
         }
       ]
@@ -175,6 +187,7 @@ const APP_TEXT: AppTextType = {
       content: [
         {
           title: 'benhur',
+          link: '',
           img: 'benhur_1.jpg',
           summary: `Internal tool made to boost team productivity by speeding up
                     the gathering of SEO data for clients and outputting it as charts and datagrids`,
@@ -188,6 +201,17 @@ const APP_TEXT: AppTextType = {
             'postGreSQL',
             'Apache airflow',
             'Docker'
+          ]
+        },
+        {
+          title: 'Word Salad (WIP)',
+          link:'https://github.com/CJLFortunato/wordsalad',
+          img: 'wordsalad.jpg',
+          summary: `A tool for writers to log their word count on a specific project.`,
+          tech: [
+            'Django',
+            'SQLite',
+            'CanvasJS'
           ]
         }
       ]

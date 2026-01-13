@@ -20,6 +20,7 @@ export type Projects = {
   title: string,
   content: {
     title: string,
+    link: string,
     img: string,
     summary: string,
     tech: string[]
